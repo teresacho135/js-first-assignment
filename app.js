@@ -160,3 +160,41 @@ function freeCoupons() {
   };
 };
 
+// 2. Write a program to prompt the user to enter a day 
+// (like Monday, Tuesday, Wednesday, etc). 
+// Based on the value entered by the user, 
+// display a special dish. 
+// For example, if the user enters Monday then 
+// alert "Mondays, We serve Pasta". 
+// If the user enters Friday then alert "Fridays, we serve Tacos".
+
+function hungryPeople() {
+  let day = prompt('Enter a day to see what we are cooking!');
+  let foodStatus = ''
+    switch (day) {
+      case 'Monday':
+        foodStatus = 'Mondays, we feed you Spagetti! 🍝'
+        break;
+      case 'Tuesday':
+        foodStatus = 'Tuesday, we feed you Tacos! 🌮'
+        break;
+      case 'Wednesday':
+        foodStatus = 'Wednesday, we feed you Cheeseburgers! 🍔'
+        break;
+      case 'Thursday':
+        foodStatus = 'Thursday, we feed you Noodles! 🍜'
+        break;
+      case 'Friday':
+        foodStatus = 'Friday, we feed you Sushi! 🍣'
+        break;
+      case 'Saturday':
+        foodStatus = 'Saturdays, we feed you Burritos! 🌯'
+        break;
+      case 'Sunday':
+        foodStatus = 'Sunday, we feed you Pizza! 🍕'
+        break;
+      default:
+        foodStatus = 'We feed you, Garbage! 🗑 Please input a proper day w/ Capitalization'
+    };
+    document.getElementById('food-status').innerHTML = foodStatus
+};
