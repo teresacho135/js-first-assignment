@@ -9,11 +9,11 @@
 // function ageIs(age) {
 //   if(age <= 14) {
 //     alert('Not Allowed');
-//   } else if(age > 14 && age < 65) {
-//     alert('Regular Price')
 //   } else if(age === 50) {
 //     alert('Special Discount')
-//   }
+//   } else if(age > 14 && age < 65) {
+//     alert('Regular Price')
+//   } 
 // }
 
 // ageIs(50)
@@ -198,3 +198,52 @@ function hungryPeople() {
     };
     document.getElementById('food-status').innerHTML = foodStatus
 };
+
+// 3. Write a program to prompt the user to enter a year (like 2011, 2012, 2010, etc). 
+// Based on the value entered, display the movie that won the Oscars for that year. 
+// Just write this for last 8 years. 
+// If he enters beyond last 8 years then alert the user to enter between 2003-2012.
+function whoWon() {
+  let year = prompt('Enter a year between 2003-2012 to see what movie won the Oscars that year.')
+  let winner = ''
+    switch (year) {
+      case '2003':
+        winner = ' 🎥 In the 2003, the Oscar\'s\ Movie of the Year was \'Chicago\' directed by Rob Marshall 🎥' 
+        break;
+      case '2004':
+        winner = ' 🎥 In 2004, the Oscar\'s Movie of the Year is \'The Lord of the Rings: Return of the King\' directed by Peter Jackson 🎥'
+        break;
+      case '2005':
+          winner = ' 🎥 In 2005, the Oscar\'s Movie of the Year is \'Million Dollar Baby\' directed by Clint Eastwood 🎥'
+          break;
+      case '2006':
+          winner = ' 🎥 In 2006, the Oscar\'s Movie of the Year is \'Crash\' directed by Paul Haggis 🎥'
+          break;
+      case '2007':
+          winnner = ' 🎥 In 2007, the Oscar\'s Movie of the Year is \'The Depearted\' directed by Martin Scorsese 🎥'
+          break;
+      case '2008':
+          winner = ' 🎥 In 2008, the Oscar\'s Movie of the Year is \'No Country for Old Men\' directed by Joel and Ethan Coen 🎥'
+          break;
+      case '2009':
+          winner = ' 🎥 In 2009, the Oscar\'s Movie of the Year is \'Slumdog Millionaire\' directed by Danny Boyle🎥'
+          break;
+      case '2010':
+          winner = ' 🎥 In 2010, the Oscar\'s Movie of the Year is \'The Hurt Locker\' directed by Kathryn Bigelow 🎥'
+          break;
+      case '2011':
+          winner = ' 🎥 In 2011, the Oscar\'s Movie of the Year is \'The King\'s Speech\' directed by Tom Hopper 🎥'
+          break;
+      case '2012':
+          winner = ' 🎥 In 2012, the Oscar\'s Movie of the Year is \'The Artist\' directed by Michel Hazanavicius 🎥'
+          break;
+      default:
+          winner = 'Please enter a year within the last 8 years (2003-2012)'
+          break;
+    };
+  document.getElementById('winners').innerHTML = winner;
+}
+
+// 4. Write a program to prompt the user to enter the Grade of a student 
+// (like A+, A, A-, B etc). 
+// Based on the value entered, display terms like "Excellent", "Good Job", "Average" etc.
