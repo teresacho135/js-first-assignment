@@ -24,19 +24,49 @@
 // If age is equal to 30, alert "coupon 3". 
 // If age is equal to 50, alert "coupon 4". Else alert "No coupon".
 
-function ageIs(age) {
-  if(age === 14) {
-    alert('coupon 1')
-  } else if(age === 21) {
-    alert('coupon 2')
-  } else if(age === 30) {
-    alert('coupon 3')
-  } else if(age === 50) {
-    alert('coupon 4')
+// function ageIs(age) {
+//   if(age === 14) {
+//     alert('coupon 1')
+//   } else if(age === 21) {
+//     alert('coupon 2')
+//   } else if(age === 30) {
+//     alert('coupon 3')
+//   } else if(age === 50) {
+//     alert('coupon 4')
+//   } else {
+//     alert('No coupon')
+//   }
+// };
+
+// ageIs(14)
+
+// 3. Write a program to prompt the user to enter a day 
+// (like Monday, Tuesday, Wednesday, etc). 
+// Based on the value entered by the user, 
+// display a special dish. 
+// For example, if the user enters Monday then 
+// alert "Mondays, We serve Pasta". 
+// If the user enters Friday then alert "Fridays, we serve Tacos".
+
+
+const day = prompt('What Day is Today?', feedMeSeymour(day));
+
+function feedMeSeymour(day) {
+  if(day === Monday) {
+    alert('Mondays, we feed you Spagetti! 🍝');
+  } else if(day === Tuesday) {
+    alert('Tuesday, we feed you Tacos! 🌮');
+  } else if(day === Wednesday) {
+    alert('Wednesday, we feed you Cheeseburgers! 🍔' );
+  } else if(day === Thursday) {
+    alert('Thursday, we feed you Noodles! 🍜');
+  } else if(day === Friday) {
+    alert('Friday, we feed you Sushi! 🍣');
+  } else if(day === Saturday) {
+    alert('Saturdays, we feed you Burritos! 🌯')
+  } else if(day === Sunday) {
+    alert('Sunday, we feed you Pizza! 🍕')
   } else {
-    alert('No coupon')
-  }
+    alert('We feed you, Garbage! 🗑')
+  };
 };
-
-ageIs(14)
-
