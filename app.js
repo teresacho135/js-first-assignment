@@ -247,3 +247,40 @@ function whoWon() {
 // 4. Write a program to prompt the user to enter the Grade of a student 
 // (like A+, A, A-, B etc). 
 // Based on the value entered, display terms like "Excellent", "Good Job", "Average" etc.
+
+function switchGrade () {
+  let grade = prompt('Enter the grade received. Ex: \'A+, A-. A, B+ and etc..\'');
+  let response = '';
+    switch(grade) {
+      case 'A+':
+      case 'A':
+        response = 'YOU ARE A CHAMPION! 🏆' 
+        break;
+      case 'A-':
+      case 'B+':
+        response = 'NEARLY PERFECT! HERE\'S\ A COOKIE! 🍪'  
+        break;
+      case 'B':
+      case 'B-':
+        response = 'ALMOST THERE! GREAT JOB 🎉' 
+        break;
+      case 'C+':
+      case 'C':
+        response = 'ROOM FOR IMPROVEMENT, LET\'S\ WORK ON THIS! 💪' 
+        break;
+      case 'C-':
+      case 'D+':
+        response = 'NEED\'S\ REVIEW, BOOK OFFICE HOURS 🙏' 
+        break;
+      case 'D':
+      case 'D-':
+      case 'F':
+        response = 'BOOK OFFICE HOURS ASAP PLEASE! 🏃‍♂️' 
+        break;
+      default: 
+        response = 'Please enter a proper grade w/ Capitlization';
+        break;
+    };
+  document.getElementById('grading').innerHTML = response;
+};
+
