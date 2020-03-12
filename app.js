@@ -1,5 +1,5 @@
 
-// IF ELSE STATEMENTS
+// IF ELSE STATEMENTS (Assignment 1)
 
 // 1. Write a program to prompt the user for age. 
 // If age is less than or equal to (<=) 14, alert "Not Allowed". 
@@ -70,3 +70,37 @@ function feedMeSeymour() {
 };
 
 //how to write so that user input will always be first letter capitalizised?
+
+// 4. Write a program to prompt the user to enter a year (like 2011, 2012, 2010, etc). 
+// Based on the value entered, display the movie that won the Oscars for that year. 
+// Just write this for last 8 years. 
+// If he enters beyond last 8 years then alert the user to enter between 2003-2012.
+
+function tellMeOscar() {
+  let year = prompt('Enter a year between 2003-2012 to see what movie won the Oscars that year.')
+  let answer = '';
+    if(year === '2003') {
+      answer = ' 🎥 In the 2003, the Oscar\'s\ Movie of the Year was \'Chicago\' directed by Rob Marshall 🎥' 
+    } else if(year === '2004') {
+      answer = ' 🎥 In 2004, the Oscar\'s Movie of the Year is \'The Lord of the Rings: Return of the King\' directed by Peter Jackson 🎥'
+    } else if(year === '2005') {
+      answer =' 🎥 In 2005, the Oscar\'s Movie of the Year is \'Million Dollar Baby\' directed by Clint Eastwood 🎥'
+    } else if(year === '2006') {
+      answer = ' 🎥 In 2006, the Oscar\'s Movie of the Year is \'Crash\' directed by Paul Haggis 🎥'
+    } else if(year === '2007') {
+      answer = ' 🎥 In 2007, the Oscar\'s Movie of the Year is \'The Depearted\' directed by Martin Scorsese 🎥'
+    } else if(year === '2008') {
+      answer = ' 🎥 In 2008, the Oscar\'s Movie of the Year is \'No Country for Old Men\' directed by Joel and Ethan Coen 🎥'
+    } else if(year === '2009') {
+      answer = ' 🎥 In 2009, the Oscar\'s Movie of the Year is \'Slumdog Millionaire\' directed by Danny Boyle🎥'
+    } else if(year === '2010') {
+      answer = ' 🎥 In 2010, the Oscar\'s Movie of the Year is \'The Hurt Locker\' directed by Kathryn Bigelow 🎥'
+    } else if(year === '2011') {
+      answer = ' 🎥 In 2011, the Oscar\'s Movie of the Year is \'The King\'s Speech\' directed by Tom Hopper 🎥'
+    } else if(year === '2012') {
+      answer = ' 🎥 In 2012, the Oscar\'s Movie of the Year is \'The Artist\' directed by Michel Hazanavicius 🎥'
+    } else {
+      answer = 'Please enter a year within the last 8 years (2003-2012)'
+    };
+  document.getElementById('winner').innerHTML = answer;
+};
