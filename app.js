@@ -48,25 +48,25 @@
 // alert "Mondays, We serve Pasta". 
 // If the user enters Friday then alert "Fridays, we serve Tacos".
 
-
-const day = prompt('What Day is Today?', feedMeSeymour(day));
-
-function feedMeSeymour(day) {
-  if(day === Monday) {
-    alert('Mondays, we feed you Spagetti! 🍝');
-  } else if(day === Tuesday) {
-    alert('Tuesday, we feed you Tacos! 🌮');
-  } else if(day === Wednesday) {
-    alert('Wednesday, we feed you Cheeseburgers! 🍔' );
-  } else if(day === Thursday) {
-    alert('Thursday, we feed you Noodles! 🍜');
-  } else if(day === Friday) {
-    alert('Friday, we feed you Sushi! 🍣');
-  } else if(day === Saturday) {
-    alert('Saturdays, we feed you Burritos! 🌯')
-  } else if(day === Sunday) {
-    alert('Sunday, we feed you Pizza! 🍕')
-  } else {
-    alert('We feed you, Garbage! 🗑')
-  };
+function feedMeSeymour() {
+  let day = prompt('What day is today? (Please capitalize)')
+    if(day === 'Monday') {
+      alert('Mondays, we feed you Spagetti! 🍝');
+    } else if(day === 'Tuesday') {
+      alert('Tuesday, we feed you Tacos! 🌮');
+    } else if(day === 'Wednesday') {
+      alert('Wednesday, we feed you Cheeseburgers! 🍔' );
+    } else if(day === 'Thursday') {
+      alert('Thursday, we feed you Noodles! 🍜');
+    } else if(day === 'Friday') {
+      alert('Friday, we feed you Sushi! 🍣');
+    } else if(day === 'Saturday') {
+      alert('Saturdays, we feed you Burritos! 🌯')
+    } else if(day === 'Sunday') {
+      alert('Sunday, we feed you Pizza! 🍕')
+    } else {
+      alert('We feed you, Garbage! 🗑')
+    };
 };
+
+//how to write so that user input will always be first letter capitalizised?
