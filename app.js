@@ -104,3 +104,28 @@ function tellMeOscar() {
     };
   document.getElementById('winner').innerHTML = answer;
 };
+
+// 5. Write a program to prompt the user to enter the Grade of a student 
+// (like A+, A, A-, B etc). Based on the value entered, 
+// display terms like "Excellent", "Good Job", "Average" etc.
+
+function gradeMe() {
+  let grade = prompt('Enter the grade received. Ex: \'A+, A-. A, B+ and etc..\'')
+  let response = '';
+    if(grade ==='A+' || grade === 'A') {
+      response = 'YOU ARE A CHAMPION! 🏆' 
+    } else if(grade === 'A-' || grade === 'B+') {
+      response = 'NEARLY PERFECT! HERE\'S\ A COOKIE! 🍪'  
+    } else if(grade === 'B' || grade === 'B-') {
+      response = 'ALMOST THERE! GREAT JOB 🎉' 
+    } else if(grade === 'C+' || grade === 'C') {
+      response = 'ROOM FOR IMPROVEMENT, LET\'S\ WORK ON THIS! 💪' 
+    } else if(grade === 'C-' || grade === 'D+') {
+      response = 'NEED\'S\ REVIEW, BOOK OFFICE HOURS 🙏' 
+    } else if(grade === 'D' || grade === 'D-' || grade === 'F') {
+      response = 'BOOK OFFICE HOURS ASAP PLEASE! 🏃‍♂️' 
+    } else {
+      response = 'Please enter a proper grade w/ Capitlization'
+    };
+  document.getElementById('response-display').innerHTML = response;
+};
