@@ -294,4 +294,14 @@ const counting = () => {
   };
 };
 
-counting();
+// counting();
+
+// 2. Write a program to print numbers 1-10 in reverse order (like 10,9,8,7,6,....1) with a line break.
+
+const reverseCount = () => {
+  for(let i = 10; i >= 1; i--) {
+    console.log(i)
+  };
+};
+
+reverseCount();
