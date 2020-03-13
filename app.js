@@ -316,6 +316,17 @@ const numTotal = () => {
   return sum;
 };
 
-numTotal();
+// numTotal();
 //a way to write so it will return w/o console.log?
+
+// 4. Write a program to print (in console) 1-30 odd numbers with a line break
+
+const oddNum = () => {
+  for(let i = 1; i <= 30; i += 2) {
+    console.log(i);
+  };
+};
+
+// oddNum();
+
 
