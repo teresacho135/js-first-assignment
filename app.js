@@ -312,8 +312,7 @@ const numTotal = () => {
   for(let i = 12; i <= 33; i++) {
     sum += i
   };
-  console.log(sum);
-  return sum;
+  console.log(sum)
 };
 
 // numTotal();
@@ -329,4 +328,12 @@ const oddNum = () => {
 
 // oddNum();
 
+// 5. Write a program to print (in console) 1-30 even numbers with a line break
 
+const evenNum = () => {
+  for(let i = 0; i <= 30; i += 2) {
+    console.log(i);
+  };
+};
+
+evenNum();
