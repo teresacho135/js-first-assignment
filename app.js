@@ -284,3 +284,14 @@ function switchGrade () {
   document.getElementById('grading').innerHTML = response;
 };
 
+// Assignment 3: Loops
+
+// 1. Write a program to print (in console) 1-30 numbers with a line break.
+
+const counting = () => {
+  for(let i = 1; i <= 30; i++) {
+    console.log(i)
+  };
+};
+
+counting();
