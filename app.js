@@ -304,4 +304,18 @@ const reverseCount = () => {
   };
 };
 
-reverseCount();
+// reverseCount();
+
+// 3. Write a program to print numbers from 12 to 33 and also at the end print the sum of all these numbers.
+const numTotal = () => {
+  let sum = 0;
+  for(let i = 12; i <= 33; i++) {
+    sum += i
+  };
+  console.log(sum);
+  return sum;
+};
+
+numTotal();
+//a way to write so it will return w/o console.log?
+
