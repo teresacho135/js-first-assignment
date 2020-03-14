@@ -356,3 +356,13 @@ const countTen = () => {
 };
 
 // countTen();
+
+// 2. Print numbers from 10 to 1
+
+const tenToOne = () => {
+  for(let i = 10; i >= 1; i--) {
+    console.log(i);
+  };
+};
+
+// tenToOne();
