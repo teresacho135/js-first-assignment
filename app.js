@@ -463,4 +463,29 @@ const alertNums = (val) => {
   };
 };
 
-alertNums('128')
+// alertNums('123');
+
+// 9. If I enter ‘1’, alert should be ‘One’
+// If I enter ‘2’, alert should be ‘Two’
+// If I enter ‘3’, alert should be ‘Three’
+// If I enter ‘4’, alert should be ‘Four’
+// If I enter ‘5’, alert should be ‘Five’
+// Else, please enter a valid number.
+ 
+const numAlert = (val) => {
+  if(val === '1') {
+    alert('One');
+  } else if(val === '2') {
+    alert('Two');
+  } else if(val === '3') {
+    alert('Three');
+  } else if(val === '4') {
+    alert('Four');
+  } else if(val === '5') {
+    alert('Five');
+  } else {
+    alert('Please enter a valid number 1-5');
+  };
+};
+
+// numAlert('2');
