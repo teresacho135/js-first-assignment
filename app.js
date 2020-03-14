@@ -489,3 +489,26 @@ const numAlert = (val) => {
 };
 
 // numAlert('2');
+
+// 10. If I enter a number between 1 to 10, it should alert, the number is between ‘1 and 10’
+// If I enter a number between 11 to 20, it should alert, the number is between ‘11 and 20’
+// If I enter a number between 21 to 30, it should alert, the number is between ‘21 and 30’
+// If I enter a number between 31 to 40, it should alert, the number is between ‘31 and 40’
+// If I enter a number between 41 to 50, it should alert, the number is between ‘41 and 50’
+
+function guessNum (num) {
+  num = prompt('Guess a number.');
+  if(num > 1 && num < 10) {
+    alert('the number is between 1 and 10')
+  } else if(num > 11 && num < 20) {
+    alert('the number is between 11 and 20');
+  } else if(num > 21 && num < 30) {
+    alert('the number is between 21 and 30');
+  } else if(num > 31 && num < 40) {
+    alert('the number is between 31 and 40'); 
+  } else if(num > 41 && num < 50 ) {
+    alert('the number is between 41 and 50');
+  } else {
+    alert('please enter a number between 1-50');
+  };
+};
