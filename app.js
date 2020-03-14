@@ -385,4 +385,15 @@ const evenOnly = () => {
   };
 };
 
-evenOnly();
+// evenOnly();
+
+// 5. Numbers to be printed between 40 to 60
+
+const fortyToSixty = () => {
+  for(let i = 40; i <= 60; i++) {
+    console.log(i);
+  };
+};
+
+// fortyToSixty();
+
