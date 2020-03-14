@@ -439,4 +439,28 @@ const numCount = (num) => {
   };
 };
 
-numCount('5');
+// numCount('5');
+
+// 8. If the value is entered ‘123’, alert should be ‘One Two Three’
+// If the value is entered ‘124’, alert should be ‘One Two Four’
+// If the value is entered ‘125’, alert should be ‘One Two Five’
+// If the value is entered ‘126’, alert should be ‘One Two Six’
+// If the value is entered ‘127’, alert should be ‘One Two Seven’
+
+const alertNums = (val) => {
+  if(val === '123') {
+    alert('One Two Three');
+  } else if(val === '124') {
+    alert('One Two Four');
+  } else if(val === '125') {
+    alert('One Two Five');
+  } else if(val === '126') {
+    alert('One Two Six');
+  } else if(val === '127') {
+    alert('One Two Seven');
+  } else {
+    alert('input another value');
+  };
+};
+
+alertNums('128')
