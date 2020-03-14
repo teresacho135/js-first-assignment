@@ -528,3 +528,28 @@ const alertAlert = (num) => {
 };
 
 // alertAlert(60)
+
+// 12. If I enter ‘One’, alert ‘1’
+// If I enter ‘Two’, alert ‘2’
+// If I enter ‘Three’, alert ‘3’
+// If I enter ‘Four’,alert ‘4’
+// If I enter ‘Five’, alert ‘5’
+
+const alertNumPrompt = (num) => {
+  num = prompt('enter a number between One thru Five');
+  if(num === 'One') {
+    alert('1');
+  } else if(num === 'Two') {
+    alert('2');
+  } else if(num === 'Three') {
+    alert('3');
+  } else if(num === 'Four') {
+    alert('4');
+  } else if(num === 'Five') {
+    alert('5');
+  } else {
+    alert('enter one thru five');
+  };
+};
+
+//can futureproof this more. 
