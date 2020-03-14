@@ -553,3 +553,18 @@ const alertNumPrompt = (num) => {
 };
 
 //can futureproof this more. 
+
+// 13. If I enter numbers Six to Ten, please enter a proper number. 
+// Anything else, please enter a valid number.
+
+const alertInput = (num) => {
+  num = prompt('enter a number Six to Ten');
+  parsedNum = parseInt(num);
+  if(parsedNum => 6 && parsedNum <= 10) {
+    alert('please enter a proper number')
+  } else {
+    alert('please enter a valid number');
+  };
+};
+
+//will not return correct alert for 6 and 10. 
