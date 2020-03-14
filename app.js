@@ -345,3 +345,14 @@ const evenNum = () => {
 // the current loop value is zero 
 // then we know it is not prime so break out and say so.
 
+//Assignment 4: For-Loop and If/Else
+
+// 1. Print numbers from 1 to 10
+
+const countTen = () => {
+  for(let i = 1; i <= 10; i++) {
+    console.log(i);
+  };
+};
+
+// countTen();
