@@ -366,3 +366,14 @@ const tenToOne = () => {
 };
 
 // tenToOne();
+
+// 3. Print odd numbers from 1 to 50
+
+const oddOnly = () => {
+  for(let i = 1; i <= 50; i += 2) {
+    console.log(i);
+  };
+};
+
+// oddOnly();
+
