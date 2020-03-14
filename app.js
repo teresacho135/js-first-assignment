@@ -336,4 +336,12 @@ const evenNum = () => {
   };
 };
 
-evenNum();
+// evenNum();
+
+// 6. Write a program to print 1-100 prime numbers.
+
+
+//number will be divisible by itself and one.If the remainder of our value with 
+// the current loop value is zero 
+// then we know it is not prime so break out and say so.
+
