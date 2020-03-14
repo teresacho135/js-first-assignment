@@ -377,3 +377,12 @@ const oddOnly = () => {
 
 // oddOnly();
 
+// 4. Print even numbers from 1 to 100
+
+const evenOnly = () => {
+  for(let i = 0; i <= 100; i += 2) {
+    console.log(i);
+  };
+};
+
+evenOnly();
