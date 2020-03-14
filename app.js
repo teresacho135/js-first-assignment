@@ -397,3 +397,12 @@ const fortyToSixty = () => {
 
 // fortyToSixty();
 
+// 6. Numbers printed between 80 to 100
+
+const eightyToHundred = () => {
+  for(let i = 80; i <= 100; i++) {
+    console.log(i);
+  };
+};
+
+eightyToHundred();
