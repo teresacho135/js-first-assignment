@@ -512,3 +512,19 @@ function guessNum (num) {
     alert('please enter a number between 1-50');
   };
 };
+
+// 11. If the number is less than 50 or greater than 200, alert the number is a valid number
+// If the number is between 50 and 200, alert this is a good number.
+// Else, alert ‘It is an invalid number’.
+
+const alertAlert = (num) => {
+  if(num < 50 || num > 200) {
+    alert('this number is a valid number.');
+  } else if(num > 50 && num < 200) {
+    alert('this is a good number.')
+  } else {
+    alert('It is an invalid number.');
+  };
+};
+
+// alertAlert(60)
