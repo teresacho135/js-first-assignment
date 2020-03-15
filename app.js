@@ -592,3 +592,21 @@ const evenOrOdd = (num) => {
 
   // 15. If I enter an even number, I want previous 5 even numbers to be printed. 
   // If I enter an odd number, I want previous 5 odd numbers to be printed.
+
+  // because I couldn't figure out last question, will only be answering this question using console.log
+
+  const prevNum = (num) => {
+    if(num % 2 === 0) {
+      for(i = num; i >= num - 9; i -= 2) {
+        console.log(i);
+      };
+    } else if(num % 2 !== 0) {
+      for(i = num; i >= num - 9; i -= 2) {
+        console.log(i);
+      };
+    } else {
+      return num;
+    };
+  };
+
+  // prevNum(7)
