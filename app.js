@@ -666,4 +666,13 @@ const lengthOfString = (string) => {
 
 //  toUpperCase('hello');
 
+// 6. Write a program to convert the above string to Lower case
+
+const toLowerCase = (string) => {
+  lowerCased = string.toLowerCase();
+  console.log(lowerCased);
+  return lowerCased;
+};
+
+// toLowerCase('HELLO');
 
