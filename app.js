@@ -568,3 +568,27 @@ const alertInput = (num) => {
 };
 
 //will not return correct alert for 6 and 10. 
+
+// 14. If I enter an even number, I want next 10 even numbers to be printed. 
+// If I enter an odd number, I want next 10 odd numbers to be printed.
+
+const evenOrOdd = (num) => {
+  num = prompt('enter a number');
+  parsedNum = parseInt(num);
+  if(parsedNum % 2 === 0) {
+    for(i = parsedNum; i <= parsedNum + 20; i+= 2) {
+      document.getElementById('even-to-ten').innerHTML = i
+    }
+  } else if(parsedNum % 2 !== 0) {
+    for(i = parsedNum; i <= parsedNum + 19; i+= 2) {
+      document.getElementById('odd-to-ten').innerHTML = parsedNum
+    }
+  }
+  // } else {
+  //   document.getElementById('even-to-ten').innerHTML = parsedNum
+  }
+
+  //cannot seem to get html to display - will work in console.log
+
+  // 15. If I enter an even number, I want previous 5 even numbers to be printed. 
+  // If I enter an odd number, I want previous 5 odd numbers to be printed.
