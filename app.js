@@ -644,3 +644,16 @@ const resultQ3 = () => {
 // !! adds 3 + 5 and concats 6 to become a string in the end
 // answer is '86'
 
+// 4. Write a program to return the length of a string 
+// "Pneumonoultramicroscopicsilicovolcanoconiosis".
+
+const lengthOfString = (string) => {
+  length = string.length;
+  console.log(length);
+  return length;
+};
+
+// lengthOfString("Pneumonoultramicroscopicsilicovolcanoconiosis");
+// returns '45'
+
+
