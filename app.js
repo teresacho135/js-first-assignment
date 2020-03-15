@@ -628,6 +628,19 @@ const resultQ2 = () => {
   console.log(typeof(res));
 };
 
-resultQ2();
+// resultQ2();
 // should return '356', becomes a whole string;
+
+// 3. What is the result of 3+5+”6”
+
+const resultQ3 = () => {
+  res = 3 + 5 + '6';
+  console.log(res);
+  console.log(typeof(res));
+};
+
+// resultQ3();
+// should return '356' as whole string
+// !! adds 3 + 5 and concats 6 to become a string in the end
+// answer is '86'
 
