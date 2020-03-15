@@ -656,4 +656,14 @@ const lengthOfString = (string) => {
 // lengthOfString("Pneumonoultramicroscopicsilicovolcanoconiosis");
 // returns '45'
 
+// 5. Write a program to convert the above string to Upper case
+
+ const toUpperCase = (string) => {
+   upperCased = string.toUpperCase();
+   console.log(upperCased);
+   return upperCased;
+ };
+
+//  toUpperCase('hello');
+
 
