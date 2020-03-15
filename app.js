@@ -615,8 +615,19 @@ const evenOrOdd = (num) => {
 // 1. What is the result of “3”+5+6.
 const result = () => {
   res = '3' + 5 + 6
-  console.log(typeof(res));
+  console.log(res);
 };
 
 // should return '356' becomes a complete string.
 // result();
+
+// 2. What is the result of 3+”5”+6
+const resultQ2 = () => {
+  res = 3 + '5' + 6;
+  console.log(res);
+  console.log(typeof(res));
+};
+
+resultQ2();
+// should return '356', becomes a whole string;
+
