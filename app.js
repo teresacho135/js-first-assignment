@@ -1,5 +1,4 @@
-
-// IF ELSE STATEMENTS (Assignment 1)
+//--------------------------------------------------Assignment 1: If-Else----------------------------------------------//
 
 // 1. Write a program to prompt the user for age. 
 // If age is less than or equal to (<=) 14, alert "Not Allowed". 
@@ -130,7 +129,7 @@ function gradeMe() {
   document.getElementById('response-display').innerHTML = response;
 };
 
-// Assignment 2: Switch
+//--------------------------------------------------Assignment 2: Switch----------------------------------------------//
 
 // 1. Write a program to prompt the user for age. 
 // If age is equal to 14, alert "coupon 1". 
@@ -284,7 +283,7 @@ function switchGrade () {
   document.getElementById('grading').innerHTML = response;
 };
 
-// Assignment 3: Loops
+//--------------------------------------------------Assignment 5: Loops----------------------------------------------//
 
 // 1. Write a program to print (in console) 1-30 numbers with a line break.
 
@@ -345,7 +344,7 @@ const evenNum = () => {
 // the current loop value is zero 
 // then we know it is not prime so break out and say so.
 
-//Assignment 4: For-Loop and If/Else
+//--------------------------------------------------Assignment 5: If/Else and Loops----------------------------------------------//
 
 // 1. Print numbers from 1 to 10
 
@@ -610,3 +609,14 @@ const evenOrOdd = (num) => {
   };
 
   // prevNum(7)
+
+//--------------------------------------------------Assignment 5: Strings----------------------------------------------//
+
+// 1. What is the result of “3”+5+6.
+const result = () => {
+  res = '3' + 5 + 6
+  console.log(typeof(res));
+};
+
+// should return '356' becomes a complete string.
+// result();
