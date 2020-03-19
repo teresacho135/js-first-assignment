@@ -704,5 +704,10 @@ const countOccurance = (char) => {
   return count;
 };
 
-console.log(countOccurance('o'));
+// console.log(countOccurance('o'));
 
+// 9. Write a program to replace a particular term in a sentence (you can come up with a sentence). Replace with the term "javascript".
+ const stringTwo = 'Hello, my name is Teresa';
+
+ const replaced = stringTwo.replace('name', 'javascript');
+ console.log(replaced);
