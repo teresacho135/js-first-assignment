@@ -690,3 +690,19 @@ const splitString = (string) => {
 
 // splitString('I like this product; I hate this product; This product is worth buying; I don’t agree with the above user');
 
+// 8. For the above question 1, return the number of time the letter "o" appears.
+
+const string = 'I like this product; I hate this product; This product is worth buying; I don’t agree with the above user'
+
+const countOccurance = (char) => {
+  let count = 0;
+  for(let i = 0; i < string.length; i++) {
+    if(string[i] === char) {
+      count++;
+    };
+  };
+  return count;
+};
+
+console.log(countOccurance('o'));
+
