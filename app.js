@@ -731,7 +731,16 @@ const wordOccurance = (word) => {
 
 // console.log(wordOccurance('not'));
 
-// (b). Confused w/ problem brief-does this mean that we return string when taking out the word 'not' or after it has been counted how many times 'not' has occurred in string. 
+// (b). Now, for the above problem 4, create an array with texts before and after "not" occurrences.
+// Confused w/ problem brief-does this mean that we return string when taking out the word 'not' or after it has been counted how many times 'not' has occurred in string. 
+const splitNot = (string) => {
+  let splitted = stringThree.split('not');
+  console.log(splitted;
+  return splitted
+}
+
+// splitNot(stringThree)
+
 
 // 11. There is a link: http://www.pro-tekconsulting.com/main/navigate/about&us/contactus/email/your
 // info.jsp
@@ -745,4 +754,8 @@ const wordOccurance = (word) => {
 // firstname=prompt1 & lastname=prompt&ph_no=prompt3”
 
 //Link is dead.
+
+//--------------------------------------------------Assignment 6: Arrays----------------------------------------------//
+
+// 1. Write a program to display 10 quotes (one after the other in sequence). Hint: use Arrays to store the quotes (sayings). Name the function as displayQuotes.
 
