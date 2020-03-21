@@ -785,3 +785,18 @@ const displayQuotes = () => {
 // you created in Question 1.
 
 //having trouble with this question
+
+// 3. For the above created array, perform the following operations on an array.
+// a. pop()
+// b. Now check the length and print it to console
+// c. reverse()
+// d. Now access the 8th array element and print it to console
+// e. shift()
+// f. Now check the length and print it to console
+// g. sort()
+
+// a. pop();
+// authorQuotes.pop();
+// console.log(authorQuotes);
+
+//removes the last quote in the array.
