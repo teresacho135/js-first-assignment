@@ -809,3 +809,7 @@ const displayQuotes = () => {
 // authorQuotes.reverse();
 // console.log(authorQuotes);
 //reverses the entire array; first being last and last being first.
+
+// d. Now access the 8th array element and print it to console
+// console.log(authorQuotes[8]);
+//returns the Ernest Hemingway quote.
