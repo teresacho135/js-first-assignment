@@ -800,3 +800,7 @@ const displayQuotes = () => {
 // console.log(authorQuotes);
 
 //removes the last quote in the array.
+
+// b. Now check the length and print it to console
+// console.log(authorQuotes.length);
+//returns back '9'
