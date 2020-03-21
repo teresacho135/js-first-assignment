@@ -1,0 +1,86 @@
+
+
+
+//--------------------------------------------------Assignment 6: Arrays----------------------------------------------//
+
+// 1. Write a program to display 10 quotes (one after the other in sequence). Hint: use Arrays to store the quotes (sayings). Name the function as displayQuotes.
+
+const authorQuotes = [
+  '\'Write hard and clear about what hurts\' - Ernest Hemingway',
+  '\'Don\'t be \'a writer\' be writing.\'- William Faulkner',
+  'You\'ll turn out ordinary if you\'re not careful.\' -Ann Brashares',
+  '\'One day I will find the right words, and they will be simple\' - Jack Kerouac',
+  '\'Either write something worth reading or do something worth writing\' - Benjamin Franklin',
+  '\'We write to taste life twice, in the moment and in retrospect\' - Anais Nin',
+  '\'Subsitute \'damn\' every time you\'re inclined to write \'very\', your editor will delete it and the writing will be as it should be\' - Mark Twain',
+  '\'You must stay drunk on writing so reality cannot destroy you.\' - Ray Bradbury',
+  '\'I can shake off everything as I write; my sorrow disappears, my courage is reborn\' - Anne Frank',
+  '\'Let me live, love, and say it well in good sentences.\' - Sylvia Plath',
+];
+
+const displayQuotes = () => {
+  for(let i = 0; i < authorQuotes.length; i++) {
+    // console.log(authorQuotes[i]);
+    window.alert(authorQuotes[i]);
+  };
+};
+
+// 2. Create a function that accepts a parameter which is of the type Array 
+// and alerts the length of the array as well as the elements one after the other 
+// starting from 4th element. Call this function from displayQuotes function that 
+// you created in Question 1.
+
+//having trouble with this question
+
+// 3. For the above created array, perform the following operations on an array.
+// a. pop()
+// b. Now check the length and print it to console
+// c. reverse()
+// d. Now access the 8th array element and print it to console
+// e. shift()
+// f. Now check the length and print it to console
+// g. sort()
+
+// a. pop();
+// authorQuotes.pop();
+// console.log(authorQuotes);
+
+//removes the last quote in the array.
+
+// b. Now check the length and print it to console
+// console.log(authorQuotes.length);
+//returns back '9'
+
+// c. reverse()
+// authorQuotes.reverse();
+// console.log(authorQuotes);
+//reverses the entire array; first being last and last being first.
+
+// d. Now access the 8th array element and print it to console
+// console.log(authorQuotes[8]);
+//returns the Ernest Hemingway quote.
+
+// e. shift()
+// authorQuotes.shift();
+// console.log(authorQuotes);
+// removes the first item of an array, Anne Frank quote is now removed.
+
+// f. Now check the length and print it to console
+// console.log(authorQuotes.length);
+// returns '8'
+
+// g. sort()
+// authorQuotes.sort();
+// console.log(authorQuotes);
+//sorts the array but idk by what order.
+
+// 4. Prompt the user for appropriate values based on the operation that you are performing and then execute the following operations on the array:
+// a. push()
+// b. Now check the length and print it to console
+// c. unshift()
+// d. Now check the length and print it to console
+// e. splice()
+// f. Now check the length and print it to console. Now access the 5th array element and print it to console.
+// g. slice()
+
+// a. push()
