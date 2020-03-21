@@ -735,9 +735,9 @@ const wordOccurance = (word) => {
 // Confused w/ problem brief-does this mean that we return string when taking out the word 'not' or after it has been counted how many times 'not' has occurred in string. 
 const splitNot = (string) => {
   let splitted = stringThree.split('not');
-  console.log(splitted;
+  console.log(splitted);
   return splitted
-}
+};
 
 // splitNot(stringThree)
 
@@ -759,3 +759,22 @@ const splitNot = (string) => {
 
 // 1. Write a program to display 10 quotes (one after the other in sequence). Hint: use Arrays to store the quotes (sayings). Name the function as displayQuotes.
 
+const authorQuotes = [
+  '\'Write hard and clear about what hurts\' - Ernest Hemingway',
+  '\'Don\'t be \'a writer\' be writing.\'- William Faulkner',
+  'You\'ll turn out ordinary if you\'re not careful.\' -Ann Brashares',
+  '\'One day I will find the right words, and they will be simple\' - Jack Kerouac',
+  '\'Either write something worth reading or do something worth writing\' - Benjamin Franklin',
+  '\'We write to taste life twice, in the moment and in retrospect\' - Anais Nin',
+  '\'Subsitute \'damn\' every time you\'re inclined to write \'very\', your editor will delete it and the writing will be as it should be\' - Mark Twain',
+  '\'You must stay drunk on writing so reality cannot destroy you.\' - Ray Bradbury',
+  '\'I can shake off everything as I write; my sorrow disappears, my courage is reborn\' - Anne Frank',
+  '\'Let me live, love, and say it well in good sentences.\' - Sylvia Plath',
+];
+
+const displayQuotes = () => {
+  for(let i = 0; i < authorQuotes.length; i++) {
+    // console.log(authorQuotes[i]);
+    window.alert(authorQuotes[i]);
+  };
+};
