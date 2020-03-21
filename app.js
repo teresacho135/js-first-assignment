@@ -778,3 +778,10 @@ const displayQuotes = () => {
     window.alert(authorQuotes[i]);
   };
 };
+
+// 2. Create a function that accepts a parameter which is of the type Array 
+// and alerts the length of the array as well as the elements one after the other 
+// starting from 4th element. Call this function from displayQuotes function that 
+// you created in Question 1.
+
+//having trouble with this question
