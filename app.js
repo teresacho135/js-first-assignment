@@ -822,3 +822,8 @@ const displayQuotes = () => {
 // f. Now check the length and print it to console
 // console.log(authorQuotes.length);
 // returns '8'
+
+// g. sort()
+// authorQuotes.sort();
+// console.log(authorQuotes);
+//sorts the array but idk by what order.
