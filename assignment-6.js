@@ -84,3 +84,13 @@ const displayQuotes = () => {
 // g. slice()
 
 // a. push()
+
+const newQuote = '\Hit me with your best shot\' - Pat Benatar';
+
+const pushQuote = (newQuote) => {
+  authorQuotes.push(newQuote);
+};
+
+pushQuote(newQuote);
+// console.log(authorQuotes);
+//having error w/ node.js using prompt (returns prompt is undefined.)
