@@ -804,3 +804,8 @@ const displayQuotes = () => {
 // b. Now check the length and print it to console
 // console.log(authorQuotes.length);
 //returns back '9'
+
+// c. reverse()
+// authorQuotes.reverse();
+// console.log(authorQuotes);
+//reverses the entire array; first being last and last being first.
