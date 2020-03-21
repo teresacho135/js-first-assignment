@@ -818,3 +818,7 @@ const displayQuotes = () => {
 // authorQuotes.shift();
 // console.log(authorQuotes);
 // removes the first item of an array, Anne Frank quote is now removed.
+
+// f. Now check the length and print it to console
+// console.log(authorQuotes.length);
+// returns '8'
