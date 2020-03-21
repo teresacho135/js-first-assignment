@@ -813,3 +813,8 @@ const displayQuotes = () => {
 // d. Now access the 8th array element and print it to console
 // console.log(authorQuotes[8]);
 //returns the Ernest Hemingway quote.
+
+// e. shift()
+// authorQuotes.shift();
+// console.log(authorQuotes);
+// removes the first item of an array, Anne Frank quote is now removed.
