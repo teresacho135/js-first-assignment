@@ -363,3 +363,35 @@ const dayAfterDay = () => {
       alert('Please enter a valid weekday');
     };
 };
+
+// 9. Create an array, for every match, display an alert ‘match’.
+
+const guardiansOfGalaxy = [
+  'Star Lord',
+  'Gamora',
+  'Drax',
+  'Groot',
+  'Rocket',
+  'Mantis'
+];
+
+const askGuardians = () => {
+  answer = prompt('Name one Guardian of the Galaxy.');
+  let response = ''
+  if (answer === 'Star Lord') {
+    response = '🔥 MATCH 🔥' 
+  } else if (answer === 'Gamora') {
+    response = '👊 MATCH 👊'; 
+  } else if (answer === 'Drax') {
+    response = '🚒 MATCH 🚒';  
+  } else if (answer === 'Groot') {
+    response = '🧨 MATCH 🧨'; 
+  } else if (answer === 'Rocket') {
+    response = '🍿 MATCH 🍿';
+  } else if (answer === 'Matis') {
+    response = '🦈 MATCH 🦈' 
+  } else {
+    alert('Please input another character');
+  };
+  document.getElementById('match').innerHTML = response;
+};
