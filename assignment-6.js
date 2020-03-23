@@ -263,3 +263,49 @@ const loggingDays = (array) => {
 };
 
 // loggingDays(daysOfWeek);
+
+// 7. Ask for a prompt, if I enter ‘Monday’, 
+// in console display- Tuesday’,’Wednesday’,’Thursday’,’Friday’and ‘Saturday.
+// If I enter ‘Tuesday’,in console display ’Wednesday’,’Thursday’,’Friday’and ‘Saturday’.
+// If I enter ‘Wednesday’,in console display ’Thursday’,’Friday’and ‘Saturday’.
+// If I enter ‘Thursday’ , in console- ‘Friday’and ‘Saturday’.
+// If I enter ‘Friday’, in console- ‘Saturday’.
+// If I enter ‘Saturday,in console –‘Sunday’.
+// If I enter ‘Sunday’, in console- it is the last day of the week.
+
+const askDaysAfter = () => {
+  const enteredDay = prompt('Please enter a day.').toUpperCase();
+  if (enteredDay === 'Monday') {
+      for (let i = 1; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      };
+    } else if (enteredDay === 'Tuesday') {
+      for (let i = 2; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      }
+    } else if (enteredDay === 'Wednesday') {
+      for (let i = 3; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      };
+    } else if (enteredDay === 'Thursday') {
+      for (let i = 4; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      };
+    } else if (enteredDay === 'Friday') {
+      for (let i = 5; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      };
+    } else if (enteredDay === 'Saturday') {
+      for (let i = 6; i < daysOfWeek.length; i ++) {
+        console.log(daysOfWeek[i]);
+      };
+    } else if (enteredDay === 'Sunday') {
+      console.log('It is the last day of the week');
+      } else {
+      alert('Please enter a valid weekday');
+    };
+};
+
+//want to make enteredDay to upper case
+
+
