@@ -242,3 +242,24 @@ const addAllMonths = (array) => {
 };
 
 // addAllMonths(monthsCombined);
+
+// 6. Create an array with Monday, Tuesday,Wednesday,Thursday, 
+// Friday and Saturday and console.log individually.
+
+const daysOfWeek = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+
+const loggingDays = (array) => {
+  for(let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  };
+};
+
+// loggingDays(daysOfWeek);
