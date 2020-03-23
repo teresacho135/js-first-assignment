@@ -220,3 +220,11 @@ console.log(monthsTwo.length);
 // e. splice()
 monthsTwo.splice(2, 0, 'This should be the third month');
 // console.log(monthsTwo);
+
+// f. Now check the length and print it to console.
+//  Now access the 5th array element and print it to console.
+console.log(monthsTwo.length);
+//returns 15;
+console.log(monthsTwo[5]);
+//April
+
