@@ -94,3 +94,8 @@ const pushQuote = (newQuote) => {
 pushQuote(newQuote);
 // console.log(authorQuotes);
 //having error w/ node.js using prompt (returns prompt is undefined.)
+
+// b. Now check the length and print it to console
+// console.log(authorQuotes.length);
+//Returns back 11 - one extra quote now added. 
+
