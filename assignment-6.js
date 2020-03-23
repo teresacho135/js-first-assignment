@@ -161,3 +161,6 @@ months.pop();
 // b. Now check the length and print it to console
 // console.log(months.length);
 //returns 11
+
+// c. reverse()
+months.reverse();
