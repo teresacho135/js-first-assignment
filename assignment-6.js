@@ -153,6 +153,11 @@ const months = [
 // f. Now check the length and print it to console
 // g. sort()
 
+// a.pop()
 months.pop();
 // console.log(months);
 // took off december. 
+
+// b. Now check the length and print it to console
+// console.log(months.length);
+//returns 11
