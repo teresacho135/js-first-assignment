@@ -168,3 +168,6 @@ months.reverse();
 // d. Now access the 8th array element and print it to console
 // console.log(months[8]);
 //returns March;
+
+// e. shift()
+months.shift();
