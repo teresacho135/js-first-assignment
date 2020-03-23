@@ -179,7 +179,7 @@ months.shift();
 // g. sort()
 months.sort();
 
-const monthTwo = [
+const monthsTwo = [
   'January', 
   'Febuary',
   'March',
@@ -204,8 +204,13 @@ const monthTwo = [
 // g. slice()
 
 // a. push();
-monthTwo.push('new month');
+monthsTwo.push('new month');
 
 // b. Now check the length and print it to console
 console.log(monthTwo.length);
 //returns 13;
+
+// c. unshift()
+monthsTwo.unshift('month in the front');
+
+
