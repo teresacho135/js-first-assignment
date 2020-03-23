@@ -177,9 +177,9 @@ months.shift();
 //returns 10
 
 // g. sort()
-month.sort();
+months.sort();
 
-const monthsTwo = [
+const monthTwo = [
   'January', 
   'Febuary',
   'March',
@@ -204,4 +204,8 @@ const monthsTwo = [
 // g. slice()
 
 // a. push();
-monthsTwo.push('new month');
+monthTwo.push('new month');
+
+// b. Now check the length and print it to console
+console.log(monthTwo.length);
+//returns 13;
