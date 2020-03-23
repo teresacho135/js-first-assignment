@@ -99,3 +99,7 @@ pushQuote(newQuote);
 // console.log(authorQuotes.length);
 //Returns back 11 - one extra quote now added. 
 
+// c. unshift()
+authorQuotes.unshift('Hello, is you I\'m looking for? - Lionel Richie');
+// console.log(authorQuotes);
+
