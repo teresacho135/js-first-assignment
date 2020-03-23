@@ -106,3 +106,8 @@ authorQuotes.unshift('Hello, is you I\'m looking for? - Lionel Richie');
 // d. Now check the length and print it to console
 // console.log(authorQuotes.length);
 //returns back 12- quote is added to the front. 
+
+// e. splice()
+authorQuotes.splice(1, 0, 'Do you believe in life after love? - Cher', 'Roads? Where we\'re going, we don\'t need roads! - Back to the Future');
+// console.log(authorQuotes);
+// array.splice( index, howmany, item1, item2,....)
