@@ -217,4 +217,6 @@ monthsTwo.unshift('month in the front');
 console.log(monthsTwo.length);
 //reuturns 14;
 
-
+// e. splice()
+monthsTwo.splice(2, 0, 'This should be the third month');
+// console.log(monthsTwo);
