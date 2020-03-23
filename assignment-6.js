@@ -207,10 +207,14 @@ const monthsTwo = [
 monthsTwo.push('new month');
 
 // b. Now check the length and print it to console
-console.log(monthTwo.length);
+// console.log(monthsTwo.length);
 //returns 13;
 
 // c. unshift()
 monthsTwo.unshift('month in the front');
+
+// d. Now check the length and print it to console
+console.log(monthsTwo.length);
+//reuturns 14;
 
 
