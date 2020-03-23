@@ -178,3 +178,30 @@ months.shift();
 
 // g. sort()
 month.sort();
+
+const monthsTwo = [
+  'January', 
+  'Febuary',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+// a. push()
+// b. Now check the length and print it to console
+// c. unshift()
+// d. Now check the length and print it to console
+// e. splice()
+// f. Now check the length and print it to console.
+//  Now access the 5th array element and print it to console.
+// g. slice()
+
+// a. push();
+monthsTwo.push('new month');
