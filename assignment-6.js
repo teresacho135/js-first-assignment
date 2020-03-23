@@ -111,3 +111,9 @@ authorQuotes.unshift('Hello, is you I\'m looking for? - Lionel Richie');
 authorQuotes.splice(1, 0, 'Do you believe in life after love? - Cher', 'Roads? Where we\'re going, we don\'t need roads! - Back to the Future');
 // console.log(authorQuotes);
 // array.splice( index, howmany, item1, item2,....)
+
+// f. Now check the length and print it to console. Now access the 5th array element and print it to console.
+console.log(authorQuotes.length)
+//returns 14, with two quotes now added. 
+console.log(authorQuotes[5]);
+//returns the Ann Brashares quote.
