@@ -103,3 +103,6 @@ pushQuote(newQuote);
 authorQuotes.unshift('Hello, is you I\'m looking for? - Lionel Richie');
 // console.log(authorQuotes);
 
+// d. Now check the length and print it to console
+// console.log(authorQuotes.length);
+//returns back 12- quote is added to the front. 
