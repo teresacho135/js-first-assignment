@@ -377,7 +377,7 @@ const guardiansOfGalaxy = [
 
 const askGuardians = () => {
   answer = prompt('Name one Guardian of the Galaxy.');
-  let response = ''
+  let response = '';
   if (answer === 'Star Lord') {
     response = '🔥 MATCH 🔥' 
   } else if (answer === 'Gamora') {
@@ -395,3 +395,50 @@ const askGuardians = () => {
   };
   document.getElementById('match').innerHTML = response;
 };
+
+// 10. Create two arrays, for every match between the 2 arrays, display an alert ‘there is a match’.
+
+const avengers = [
+  'Iron Man',
+  'Black Widow',
+  'Thor',
+  'Hulk',
+  'Ronin',
+  'Captain America',
+]
+
+
+const askAvengers = () => {
+  answer = prompt('Name a Guardian of the Galaxy or an Avenger');
+  let response = ''; 
+  if (answer === 'Iron Man') {
+    response = '💣 MATCH 💣' 
+  } else if (answer === 'Black Widow') {
+    response = '🚀 MATCH 🚀'; 
+  } else if (answer === 'Thor') {
+    response = '🐹 MATCH 🐹';
+  } else if (answer === 'Hulk') {
+    response = '🧶 MATCH 🧶'; 
+  } else if (answer === 'Ronin') {
+    response = '📨 MATCH 📨';
+  } else if (answer === 'Captian America') {
+    response = '🇺🇸 MATCH 🇺🇸' 
+  } else if (answer === 'Star Lord') {
+    response = '🔥 MATCH 🔥' 
+  } else if (answer === 'Gamora') {
+    response = '👊 MATCH 👊'; 
+  } else if (answer === 'Drax') {
+    response = '🚒 MATCH 🚒';
+  } if (answer === 'Groot') {
+    response = '🧨 MATCH 🧨'; 
+  } else if (answer === 'Rocket') {
+    response = '🍿 MATCH 🍿';
+  } else if (answer === 'Matis') {
+    response = '🦈 MATCH 🦈';
+  } else {
+    alert('Please input another character.')
+  };
+  document.getElementById('match').innerHTML = response; 
+};
+
+// Alert keeps going off.
