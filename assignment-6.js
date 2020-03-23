@@ -175,3 +175,6 @@ months.shift();
 // f. Now check the length and print it to console
 // console.log(months.length);
 //returns 10
+
+// g. sort()
+month.sort();
