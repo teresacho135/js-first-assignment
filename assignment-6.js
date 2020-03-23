@@ -113,7 +113,14 @@ authorQuotes.splice(1, 0, 'Do you believe in life after love? - Cher', 'Roads? W
 // array.splice( index, howmany, item1, item2,....)
 
 // f. Now check the length and print it to console. Now access the 5th array element and print it to console.
-console.log(authorQuotes.length)
+// console.log(authorQuotes.length)
 //returns 14, with two quotes now added. 
-console.log(authorQuotes[5]);
+// console.log(authorQuotes[5]);
 //returns the Ann Brashares quote.
+
+// g. slice()
+console.log(authorQuotes);
+const miscQuotes = authorQuotes.slice(0, 3);
+console.log(miscQuotes);
+//takes indexes 0-3 in authorQuotes and saves it into a variable called miscQuotes.
+
