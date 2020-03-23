@@ -119,8 +119,40 @@ authorQuotes.splice(1, 0, 'Do you believe in life after love? - Cher', 'Roads? W
 //returns the Ann Brashares quote.
 
 // g. slice()
-console.log(authorQuotes);
+// console.log(authorQuotes);
 const miscQuotes = authorQuotes.slice(0, 3);
-console.log(miscQuotes);
+// console.log(miscQuotes);
 //takes indexes 0-3 in authorQuotes and saves it into a variable called miscQuotes.
 
+// 5. Create a Months Array (jan, feb, mar...etc) and repeat question 3 and 4. 
+// Once you implement these two arrays, use concat() method to add these arrays. 
+// Print each of the elements of this concatenated array one after the other
+//  - hint: use loops.
+
+const months = [
+  'January', 
+  'Febuary',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+
+// a. pop()
+// b. Now check the length and print it to console
+// c. reverse()
+// d. Now access the 8th array element and print it to console
+// e. shift()
+// f. Now check the length and print it to console
+// g. sort()
+
+months.pop();
+// console.log(months);
+// took off december. 
