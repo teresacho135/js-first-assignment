@@ -228,3 +228,6 @@ console.log(monthsTwo.length);
 console.log(monthsTwo[5]);
 //April
 
+// g. slice()
+const slicedMonths = monthsTwo.slice(0,3);
+console.log(slicedMonths);
