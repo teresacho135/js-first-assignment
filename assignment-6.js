@@ -214,7 +214,7 @@ monthsTwo.push('new month');
 monthsTwo.unshift('month in the front');
 
 // d. Now check the length and print it to console
-console.log(monthsTwo.length);
+// console.log(monthsTwo.length);
 //reuturns 14;
 
 // e. splice()
@@ -223,11 +223,22 @@ monthsTwo.splice(2, 0, 'This should be the third month');
 
 // f. Now check the length and print it to console.
 //  Now access the 5th array element and print it to console.
-console.log(monthsTwo.length);
+// console.log(monthsTwo.length);
 //returns 15;
-console.log(monthsTwo[5]);
+// console.log(monthsTwo[5]);
 //April
 
 // g. slice()
 const slicedMonths = monthsTwo.slice(0,3);
-console.log(slicedMonths);
+// console.log(slicedMonths);
+
+const monthsCombined = months.concat(monthsTwo)
+const monthsArray = [];
+const addAllMonths = (array) => {
+  for(let i = 0; i < array.length; i++) {
+    monthsArray.push(array[i]);
+  }
+  console.log(monthsArray);
+};
+
+// addAllMonths(monthsCombined);
