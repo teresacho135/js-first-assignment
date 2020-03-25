@@ -9,3 +9,11 @@ function initiateParagraph() {
 const changeParagraphColor = () => {
   document.getElementById('paragraph').style.color = 'blue';
 };
+
+// 3. Have two text boxes. On click of a button, get the value from the first text box and 
+// assign that value to the second text box.
+
+const formData = () => {
+  let firstName = document.getElementById('first-name').value;
+  document.getElementById('first-name-returned').placeholder = firstName;
+}
