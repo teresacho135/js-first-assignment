@@ -16,4 +16,9 @@ const changeParagraphColor = () => {
 const formData = () => {
   let firstName = document.getElementById('first-name').value;
   document.getElementById('first-name-returned').placeholder = firstName;
-}
+};
+
+//how to stop the DOM from doing a full refresh.
+
+// 4. Have an image.
+//line 44 in assignment-7.js 
