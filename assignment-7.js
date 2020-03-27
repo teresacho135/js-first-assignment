@@ -22,3 +22,7 @@ const formData = () => {
 
 // 4. Have an image.
 //line 44 in assignment-7.js 
+// a. On click of a button, replace the image with another image.
+const imageChange = () => {
+  document.getElementById('pug-image-1').src = 'assets/pug-hat.jpg'
+};
