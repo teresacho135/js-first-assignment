@@ -33,6 +33,6 @@ const displayNone = () => {
 };
 
 // c. On click of a button, show the image
-// const displayImage = () => {
-//   document.getElementById('pug-image').style.display = 'block';
-// };
+const pugClick = () => {
+  document.getElementById('pug-hoodie').style.display = 'block'
+};
