@@ -29,6 +29,10 @@ const imageChange = () => {
 
 // b. On click of a button, hide the image
 const displayNone = () => {
-  document.getElementById('pug-image').style.display = 'none';
+  document.getElementById('pug-beret').style.display = 'none';
 };
 
+// c. On click of a button, show the image
+// const displayImage = () => {
+//   document.getElementById('pug-image').style.display = 'block';
+// };
