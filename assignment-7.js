@@ -24,5 +24,11 @@ const formData = () => {
 //line 44 in assignment-7.js 
 // a. On click of a button, replace the image with another image.
 const imageChange = () => {
-  document.getElementById('pug-image-1').src = 'assets/pug-hat.jpg'
+  document.getElementById('pug-image').src = 'assets/pug-hat.jpg'
 };
+
+// b. On click of a button, hide the image
+const displayNone = () => {
+  document.getElementById('pug-image').style.display = 'none';
+};
+
