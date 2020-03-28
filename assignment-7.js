@@ -36,3 +36,12 @@ const displayNone = () => {
 const pugClick = () => {
   document.getElementById('pug-hoodie').style.display = 'block'
 };
+
+//5. Have an image and two buttons, PREV and NEXT. 
+// Have 10 images in an array. When you click on NEXT, 
+// the next picture should display and when you click on PREV, the previous image should display.
+const dogImages = [
+  document.getElementById('dog-show').src = 'assets/pug-striped-shirt.jpg',
+  document.getElementById('dog-show').src = 'assets/pug-beret.jpg'
+];
+
