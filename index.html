@@ -43,7 +43,7 @@
         </form>
 <img 
   id='pug-image'
-  src='/assets/charles-deluvio-DziZIYOGAHc-unsplash.jpg'
+  src='/assets/pug-striped-shirt.jpg'
   alt='pug with a striped shirt' 
   style='width: 50%;' 
   onClick='imageChange();'
@@ -55,14 +55,20 @@
   style='width: 50%'
   onClick='displayNone()' 
 > <br>
-<button onClick='pugClick()'>Click for Pug</button>
+<button onClick='pugClick()'>Click for Pug</button> <br>
 <img
   id='pug-hoodie'
   alt='pug in a hoodie'
   style='width: 50%; display: none'
   src='/assets/pug-hoodie.jpg'
-  
 >
+<button onClick='prevImage()'>Prev</button>
+  <img
+    id='dog-show'
+    alt='dogs in a slideshow'
+    style='width: 50%'
+  >
+<button onClick='nextImage()'>Next</button>
 <script src='assignment-1.js'></script>
 <script src='assignment-2.js'></script>
 <script src='assignment-3.js'></script>
