@@ -88,6 +88,14 @@ const dogImages = [
   'assets/pug-beret.jpg'
 ]; 
 
-const length = dogImages.length;
+let currentIndex = 0;
 
 document.getElementById('dog-show').setAttribute('src', dogImages[0]);
+
+const handlePrev = () => {
+  if(currentIndex === 0) {
+    document.getElementById('dog-show').setAttribute('src', dogImages[dogImages.length - 1])
+  } else {
+    document.getElementById('dog-show').setAttribute('src', dogImages(currentIndex - 1))
+  };
+};
