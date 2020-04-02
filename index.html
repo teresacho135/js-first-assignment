@@ -25,16 +25,55 @@
     <button onClick='alertNumPrompt()'>One Two Three Four Five</button>
     <button onClick='alertInput()'>Six to Ten</button>
   <h1>JS ASSIGNMENT 6 (Arrays)</h1>
-  <button onClick='displayQuotes()'>Here's 10 Quotes</button>
-  <button onClick='askDaysAfter()'>Ask a Day (res in console)</button>
-  <button onClick='dayAfterDay()'>Ask a Day Round 2 (res in console)</button>
-  <button onClick='askGuardians()'>Name a Guardian of the Galaxy</button>
-  <button onClick='askAvengers()'>Name a Guardian of the Galaxy or an Avenger</button>
-    <p id='match'></p>
+    <button onClick='displayQuotes()'>Here's 10 Quotes</button>
+    <button onClick='askDaysAfter()'>Ask a Day (res in console)</button>
+    <button onClick='dayAfterDay()'>Ask a Day Round 2 (res in console)</button>
+    <button onClick='askGuardians()'>Name a Guardian of the Galaxy</button>
+    <button onClick='askAvengers()'>Name a Guardian of the Galaxy or an Avenger</button>
+      <p id='match'></p>
+  <h1>JS ASSIGNMENT 7 (DOM)</h1>
+    <button onClick='initiateParagraph()'>Click for Paragraph</button>
+      <p id='paragraph'></p>
+    <button onClick='changeParagraphColor()'>Click to change Paragraph color</button>
+      <h3>Input First Name Below (in the first box)</h3>
+        <form>
+          First Name: <input name='text-box' type="text" id='first-name' value=''> <br>
+          <input type='submit' value='Submit' onClick='formData()'/><br>
+          First Name Returned: <input type='text' name='first-name-returned' placeholder='' id='first-name-returned'>
+        </form>
+<img 
+  id='pug-image'
+  src='/assets/pug-striped-shirt.jpg'
+  alt='pug with a striped shirt' 
+  style='width: 50%;' 
+  onClick='imageChange();'
+>
+<img
+  id='pug-beret'
+  src='/assets/pug-beret.jpg'
+  alt='pug wearing beret'
+  style='width: 50%'
+  onClick='displayNone()' 
+> <br>
+<button onClick='pugClick()'>Click for Pug</button> <br>
+<img
+  id='pug-hoodie'
+  alt='pug in a hoodie'
+  style='width: 50%; display: none'
+  src='/assets/pug-hoodie.jpg'
+>
+<button onClick='prevImage()'>Prev</button>
+  <img
+    id='dog-show'
+    alt='dogs in a slideshow'
+    style='width: 50%'
+  >
+<button onClick='nextImage()'>Next</button>
 <script src='assignment-1.js'></script>
 <script src='assignment-2.js'></script>
 <script src='assignment-3.js'></script>
 <script src='assignment-4.js'></script>
 <script src='assignment-5.js'></script>
 <script src='assignment-6.js'></script>
+<script src='assignment-7.js'></script>
 </html>
