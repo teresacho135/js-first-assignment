@@ -40,8 +40,50 @@ const pugClick = () => {
 //5. Have an image and two buttons, PREV and NEXT. 
 // Have 10 images in an array. When you click on NEXT, 
 // the next picture should display and when you click on PREV, the previous image should display.
+const dogShow = document.getElementById('dog-img');
+
 const dogImages = [
-  document.getElementById('dog-show').src = 'assets/pug-striped-shirt.jpg',
-  document.getElementById('dog-show').src = 'assets/pug-beret.jpg'
-];
+  'assets/pug-striped-shirt.jpg',
+  'assets/pug-beret.jpg',
+]; 
+const length = dogImages.length;
+
+const dogShow = document.getElementById('dog-show');
+// dogShow.src = dogImages[0];
+function slideShow() {
+  if (length > dogImages.length) {
+    length = length + 1
+  } else {
+    length = 1;
+  }
+  dogShow.innerHTML = "<img src="+ dogImages[length - 1] +".jpg>"
+}
+
+
+// const slideShow = (direction) => {
+//   if(direction == 'prev') {
+//     currentIndex--;
+//   } else {
+//     currentIndex++;
+//     currentIndex %= dogImages.length;
+//   };
+//   if (currentIndex < 0) {
+//     currentIndex = dogImages.length - 1;
+//   }
+  
+//   dogShow.src = dogImages[currentIndex];
+// };
+
+// function slideShow(direction) {
+//   if (direction == 'prev') {
+//     currentIndex--;
+//   } else {
+//     currentIndex++;
+//     currentIndex &= dogImages.length;
+//   };
+//   if (currentIndex < 0) {
+//     currentIndex = dogImages.length - 1
+//   }
+//   dogShow.src = dogImages[currentIndex];
+// };
 
