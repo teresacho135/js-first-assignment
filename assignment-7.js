@@ -87,3 +87,4 @@ function slideShow() {
 //   dogShow.src = dogImages[currentIndex];
 // };
 
+//incomplete question #5
