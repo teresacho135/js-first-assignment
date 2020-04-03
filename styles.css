@@ -1,0 +1,4 @@
+input:required,
+textarea:required {
+  background: red;
+}
