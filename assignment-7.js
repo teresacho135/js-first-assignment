@@ -41,54 +41,20 @@ const pugClick = () => {
 // Have 10 images in an array. When you click on NEXT, 
 // the next picture should display and when you click on PREV, the previous image should display.
 // const dogShow = document.getElementById('dog-img');
-
-// const dogShow = document.getElementById('dog-show');
-// // dogShow.src = dogImages[0];
-// function slideShow() {
-  //   if (length > dogImages.length) {
-    //     length = length + 1
-    //   } else {
-      //     length = 1;
-      //   }
-      //   dogShow.innerHTML = "<img src="+ dogImages[length - 1] +".jpg>"
-      // }
-      
-      
-      // const slideShow = (direction) => {
-        //   if(direction == 'prev') {
-          //     currentIndex--;
-          //   } else {
-            //     currentIndex++;
-            //     currentIndex %= dogImages.length;
-            //   };
-            //   if (currentIndex < 0) {
-              //     currentIndex = dogImages.length - 1;
-              //   }
-              
-              //   dogShow.src = dogImages[currentIndex];
-              // };
-              
-              // function slideShow(direction) {
-                //   if (direction == 'prev') {
-                  //     currentIndex--;
-                  //   } else {
-                    //     currentIndex++;
-                    //     currentIndex &= dogImages.length;
-                    //   };
-                    //   if (currentIndex < 0) {
-                      //     currentIndex = dogImages.length - 1
-                      //   }
-                      //   dogShow.src = dogImages[currentIndex];
-                      // };
-                      
-                      //incomplete question #5
                       
 const dogImages = [
-  'assets/pug-striped-shirt.jpg',
   'assets/pug-beret.jpg',
   'assets/pug-hoodie.jpg',
   'assets/pug-hat.jpg',
+  'assets/pug-closeup.jpg',
+  'assets/pug-striped-shirt.jpg',
+  'assets/pug-fuzzy-hoodie.jpg',
+  'assets/pug-glasses.jpg',
+  'assets/pug-raincoat.jpg',
+  'assets/pug-red-hoodie.jpg',
+  'assets/pug-sleepy.jpg',
 ]; 
+
 
 let currentIndex = 0;
 
@@ -97,7 +63,7 @@ document.getElementById('dog-show').setAttribute('src', dogImages[0]);
 const handlePrev = () => {
   if(currentIndex === 0) {
     document.getElementById('dog-show').setAttribute('src', dogImages[dogImages.length - 1])
-    currentIndex = 3;
+    currentIndex = 10;
   } else {
     document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex - 1])
     currentIndex--;
@@ -105,11 +71,11 @@ const handlePrev = () => {
 };
 
 const handleNext = () => {
-  if(currentIndex === 3) {
+  if(currentIndex === 10) {
     document.getElementById('dog-show').setAttribute('src', dogImages[0])
     currentIndex = 0;
   } else {
     document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex + 1])
     currentIndex++;
   }
-}
+};
