@@ -40,51 +40,42 @@ const pugClick = () => {
 //5. Have an image and two buttons, PREV and NEXT. 
 // Have 10 images in an array. When you click on NEXT, 
 // the next picture should display and when you click on PREV, the previous image should display.
-const dogShow = document.getElementById('dog-img');
-
+// const dogShow = document.getElementById('dog-img');
+                      
 const dogImages = [
-  'assets/pug-striped-shirt.jpg',
   'assets/pug-beret.jpg',
+  'assets/pug-hoodie.jpg',
+  'assets/pug-hat.jpg',
+  'assets/pug-closeup.jpg',
+  'assets/pug-striped-shirt.jpg',
+  'assets/pug-fuzzy-hoodie.jpg',
+  'assets/pug-glasses.jpg',
+  'assets/pug-raincoat.jpg',
+  'assets/pug-red-hoodie.jpg',
+  'assets/pug-sleepy.jpg',
 ]; 
-const length = dogImages.length;
 
-const dogShow = document.getElementById('dog-show');
-// dogShow.src = dogImages[0];
-function slideShow() {
-  if (length > dogImages.length) {
-    length = length + 1
+
+let currentIndex = 0;
+
+document.getElementById('dog-show').setAttribute('src', dogImages[0]);
+
+const handlePrev = () => {
+  if(currentIndex === 0) {
+    document.getElementById('dog-show').setAttribute('src', dogImages[dogImages.length - 1])
+    currentIndex = 10;
   } else {
-    length = 1;
+    document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex - 1])
+    currentIndex--;
+  };
+};
+
+const handleNext = () => {
+  if(currentIndex === 10) {
+    document.getElementById('dog-show').setAttribute('src', dogImages[0])
+    currentIndex = 0;
+  } else {
+    document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex + 1])
+    currentIndex++;
   }
-  dogShow.innerHTML = "<img src="+ dogImages[length - 1] +".jpg>"
-}
-
-
-// const slideShow = (direction) => {
-//   if(direction == 'prev') {
-//     currentIndex--;
-//   } else {
-//     currentIndex++;
-//     currentIndex %= dogImages.length;
-//   };
-//   if (currentIndex < 0) {
-//     currentIndex = dogImages.length - 1;
-//   }
-  
-//   dogShow.src = dogImages[currentIndex];
-// };
-
-// function slideShow(direction) {
-//   if (direction == 'prev') {
-//     currentIndex--;
-//   } else {
-//     currentIndex++;
-//     currentIndex &= dogImages.length;
-//   };
-//   if (currentIndex < 0) {
-//     currentIndex = dogImages.length - 1
-//   }
-//   dogShow.src = dogImages[currentIndex];
-// };
-
-//incomplete question #5
+};
