@@ -85,7 +85,9 @@ const pugClick = () => {
                       
 const dogImages = [
   'assets/pug-striped-shirt.jpg',
-  'assets/pug-beret.jpg'
+  'assets/pug-beret.jpg',
+  'assets/pug-hoodie.jpg',
+  'assets/pug-hat.jpg',
 ]; 
 
 let currentIndex = 0;
@@ -95,7 +97,19 @@ document.getElementById('dog-show').setAttribute('src', dogImages[0]);
 const handlePrev = () => {
   if(currentIndex === 0) {
     document.getElementById('dog-show').setAttribute('src', dogImages[dogImages.length - 1])
+    currentIndex = 3;
   } else {
-    document.getElementById('dog-show').setAttribute('src', dogImages(currentIndex - 1))
+    document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex - 1])
+    currentIndex--;
   };
 };
+
+const handleNext = () => {
+  if(currentIndex === 3) {
+    document.getElementById('dog-show').setAttribute('src', dogImages[0])
+    currentIndex = 0;
+  } else {
+    document.getElementById('dog-show').setAttribute('src', dogImages[currentIndex + 1])
+    currentIndex++;
+  }
+}
