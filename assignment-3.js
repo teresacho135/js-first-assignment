@@ -55,21 +55,33 @@ const evenNum = () => {
 
 // 6. Write a program to print 1-100 prime numbers.
 
-const counter = 1;
-while (counter <= 100) {
-  let notPrime = false;
-  let iniial = 2;
-  while(iniial <= counter - 1) {
-    if(counter & initial === 0) {
-      notPrime = true;
-      break;
-    }
-    initial++
-  }
-  if(notPrime === false) {
-    console.log(counter);
-  }
-  counter++
-}
+// const counter = 1;
+// while (counter <= 100) {
+//   let notPrime = false;
+//   let iniial = 2;
+//   while(iniial <= counter - 1) {
+//     if(counter & initial === 0) {
+//       notPrime = true;
+//       break;
+//     }
+//     initial++
+//   }
+//   if(notPrime === false) {
+//     console.log(counter);
+//   }
+//   counter++
+// }
 //not as time effiecient. 
 
+for(let counter = 0; counter <= 100; counter++) {
+  
+  let notPrime = false;
+  for(let i = 2; i <= counter; i++) {
+    if(counter % i === 0 && i !== counter) {
+      notPrime = true;
+    }
+  }
+  if(notPrime == false) {
+    console.log(counter);
+  }
+}
