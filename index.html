@@ -72,29 +72,29 @@
     <button onClick="handlePrev()">Prev</button>
     <button onClick="handleNext()">Next</button>
   <h1>JS ASSIGNMENT 8 (FORM VALIDATION)</h1>
-  <form name='info-form' onsubmit="return validateForm()">
+  <form name='info-form' onsubmit="return validateForm(event)">
     <label for='first-name'>First Name:</label><br>
     <input 
       type='text' 
-      id='first-name' 
+      id='first-name-info' 
       name='first-name' 
       placeholder="Michael"
-      required
+      
     ><br>
     <label for='last-name'>Last Name:</label><br>
     <input
       type='text'
-      id='last-name'
+      id='last-name-info'
       name='last-name'
       placeholder="Scott"
-      required
+      
     ><br>
     <input
       type='radio'
       id='male'
       name='gender'
       value='male'
-      required
+      
     >
     <label for='male'>Male</label><br>
     <input
@@ -102,7 +102,7 @@
       id='female'
       name='gender'
       value='female'
-      required
+      
     >
     <label for='female'>Female</label><br>
     <input
@@ -110,7 +110,7 @@
       id='other'
       name='gender'
       value='other'
-      required
+      
     >
     <label for='other'>Other</label><br>
     <label for='state'>State:</label>
