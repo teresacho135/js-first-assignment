@@ -13,17 +13,25 @@
 //  has a number, the background color of the text box should change to red color.
 
 // const validateForm = () => {
+//   debugger;
 //   let firstName = document.forms['info-form']['first-name'];
 //   let lastName = document.forms['info-form']['last-name'];
 //   if (firstName.value === '') {
-//     alert('this is empty');
-//     document.getElementById('first-name').style.background = 'red';
+//     // alert('this is empty');
+// debugger;
+//     document.getElementById('first-name').style.backgroundColor = 'red';
+//     return false;
 //   };
 // };
-
-const validateForm = () => {
-  return alert('this has been activated')
-}
+//check other FIRST NAME IDS!
+// const validateForm = (e) => {
+//   e.preventDefault();
+//   return alert('this has been activated')
+// }
 
 //cannot seem to get validateForm() to ouput. 
 //Has CSS psuedo-selector that can create output but struggling on logic. 
+
+const validateForm = () => {
+  console.log('submit has been clicked.')
+}
