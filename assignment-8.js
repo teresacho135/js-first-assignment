@@ -33,11 +33,11 @@
 //Has CSS psuedo-selector that can create output but struggling on logic. 
 
 const validateForm = (event) => {
-  console.log('submit has been clicked.')
   let firstName = document.forms['info-form']['first-name'];
-  console.log(firstName);
-  if(firstName.value === '') {
+  let lastName = document.forms['info-form']['last-name'];
+  if(firstName.value === '' && lastName.value === '' ) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
+    document.getElementById('last-name-info').style.backgroundColor = 'red';
   }
   event.preventDefault();
 }
