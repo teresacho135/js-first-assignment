@@ -34,4 +34,9 @@
 
 const validateForm = () => {
   console.log('submit has been clicked.')
+  let firstName = document.forms['info-form']['first-name'];
+  console.log(firstName);
+  if(firstName.value === '') {
+    document.getElementById('first-name-info').style.backgroundColor = 'red';
+  }
 }
