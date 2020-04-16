@@ -124,3 +124,4 @@ const validateForm = (event) => {
 //refer back to validateFrom() function.
 
 // 4. If the check box is not selected, alert the user to check the box.
+//refer back to validateForm() function.
