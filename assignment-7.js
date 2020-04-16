@@ -95,6 +95,9 @@ const handleNext = () => {
 const validateForm = (event) => {
   let firstName = document.forms['info-form']['first-name'].value;
   let lastName = document.forms['info-form']['last-name'].value;
+  let maleCheckbox = document.getElementById('male');
+  let femaleCheckbox = document.getElementById('female');
+  let otherCheckbox = document.getElementById('other');
   let letters = /^[A-Za-z]+$/;
   if(firstName === '' && lastName === '' ) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
@@ -102,6 +105,8 @@ const validateForm = (event) => {
   } else if(!firstName.match(letters) && !lastName.match(letters)) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
     document.getElementById('last-name-info').style.backgroundColor = 'red';
+  } else if(maleCheckbox.checked == false && femaleCheckbox.checked == false && otherCheckbox.checked == false) {
+    alert('Please check one of the boxes')
   };
   event.preventDefault();
 };
