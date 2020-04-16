@@ -98,6 +98,7 @@ const validateForm = (event) => {
   let maleCheckbox = document.getElementById('male');
   let femaleCheckbox = document.getElementById('female');
   let otherCheckbox = document.getElementById('other');
+  let state = document.getElementById('states');
   let letters = /^[A-Za-z]+$/;
   if(firstName === '' && lastName === '' ) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
@@ -107,7 +108,9 @@ const validateForm = (event) => {
     document.getElementById('last-name-info').style.backgroundColor = 'red';
   } else if(maleCheckbox.checked == false && femaleCheckbox.checked == false && otherCheckbox.checked == false) {
     alert('Please check one of the boxes')
-  };
+  } else if(state.value == '') {
+    alert('Please pick a state.')
+  }
   event.preventDefault();
 };
 
@@ -115,3 +118,4 @@ const validateForm = (event) => {
 
 //can use required (allowing the browser to do validation.)
 
+// 3. If the State is not selected, alert the user to select a state.
