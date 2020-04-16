@@ -99,6 +99,7 @@ const validateForm = (event) => {
   let femaleCheckbox = document.getElementById('female');
   let otherCheckbox = document.getElementById('other');
   let state = document.getElementById('states');
+  let checkbox = document.getElementById('agree');
   let letters = /^[A-Za-z]+$/;
   if(firstName === '' && lastName === '' ) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
@@ -110,12 +111,16 @@ const validateForm = (event) => {
     alert('Please check one of the boxes')
   } else if(state.value == '') {
     alert('Please pick a state.')
+  } else if(!checkbox.checked) {
+    alert('Please check \'I AGREE\' to proceed.')
   }
   event.preventDefault();
 };
 
 // 2. If the Gender is not selected, alert the user to select at least one option.
-
 //can use required (allowing the browser to do validation.)
 
 // 3. If the State is not selected, alert the user to select a state.
+//refer back to validateFrom() function.
+
+// 4. If the check box is not selected, alert the user to check the box.
