@@ -173,6 +173,18 @@
     </form>
 <h1>JS ASSIGNMENT 7 CONT. (DOM AND EVENTS)</h1>   
     <h2>🔥 Fahrenheit to Celsius Calculator ❄</h2>
+    <p>
+      <label>Fahrenheit: </label>
+        <input 
+          id="fahrenheit-value"
+          type="number" 
+          placeholder="ex. 98" 
+          oninput="tempConverter(this.value)"
+          onchange="tempConverter(this.value)"
+          >
+    </p>
+    <p>Celcius: <span id="outputCelcius"></span></p>
+        <p id='celsius'></p>
 <script src='assignment-1.js'></script>
 <script src='assignment-2.js'></script>
 <script src='assignment-3.js'></script>
