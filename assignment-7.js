@@ -138,3 +138,8 @@ const validateForm = (event) => {
 // f. If the user enters any invalid values (strings) ) 
 // then you should make the input box border red and prompt user to enter correct values
 
+const tempConverter = (value) => {
+  value = parseFloat(value);
+  convertedValue = Math.round((value - 32)/1.8);
+  document.getElementById('outputCelcius').innerHTML = convertedValue + '°' ;
+};
