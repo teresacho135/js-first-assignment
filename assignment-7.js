@@ -143,3 +143,7 @@ const tempConverter = (value) => {
   convertedValue = Math.round((value - 32)/1.8);
   document.getElementById('outputCelcius').innerHTML = convertedValue + '°' ;
 };
+
+// 2. Have images, p tags, div tags and various other elements on the page. 
+// When the page loads, an alert saying "welcome to my blog" should pop up.
+alert('Welcome to my blog')
