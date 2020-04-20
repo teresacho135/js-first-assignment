@@ -174,3 +174,8 @@ const showList = () => {
   list = document.getElementById('interestingList');
   list.setAttribute('style', 'display: show');
 };
+
+const hideList = () => {
+  list = document.getElementById('interestingList');
+  list.setAttribute('style', 'display: none');
+};
