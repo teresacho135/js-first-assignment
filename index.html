@@ -190,9 +190,18 @@
   <p>Bacon ipsum dolor amet corned beef pancetta shoulder tri-tip ball tip hamburger.</p>
     <img src="assets/ham.jpg" style="width: 50%;"><br>
       <button>turducken</button><br>
-</div>  
-<input type="button" id='hideElems' onclick='hide()' value="Hide all the Bacon">
-<input type ="button" id="showElems" ondblclick="show()" value="Bring back the bacon (double click)">
+    </div>  
+    <input type="button" id='hideElems' onclick='hide()' value="Hide all the Bacon"><br>
+    <input type ="button" id="showElems" ondblclick="show()" value="Bring back the bacon (double click)"><br>
+<h3>Here are some facts that may interest you</h3>
+  <div id="interestingList" style="visibility: hidden;" >      
+    <ul>
+      <li>Canadians say “sorry” so much that a law was passed in 2009 declaring that an apology can’t be used as evidence of admission to guilt.</li>
+      <li>The scientific term for brain freeze is “sphenopalatine ganglioneuralgia”.</li>
+      <li>One habit of intelligent humans is being easily annoyed by people around them, but saying nothing in order to avoid a meaningless argument.</li>
+    </ul>
+  </div>
+<input type="button" id="listOfFacts" onmouseover="showList()" onmouseout="hideList()" value="Hover over here if you want these facts to appear"><br>
 <script src='assignment-1.js'></script>
 <script src='assignment-2.js'></script>
 <script src='assignment-3.js'></script>
