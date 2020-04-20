@@ -162,4 +162,15 @@ const hide = () => {
 const show = () => {
   showElements = document.getElementById('hideMe');
   showElements.setAttribute('style', 'visbility: visible');
-}
+};
+
+// 5. Have an input button with a id and
+// a. when you mouseover this button, 
+// the <ul> elements on the page should be shown.
+// b. when you mouseout this button, 
+// the <ul> elements on the page should be hidden.
+
+const showList = () => {
+  list = document.getElementById('interestingList');
+  list.setAttribute('style', 'display: show');
+};
