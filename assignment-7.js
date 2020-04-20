@@ -155,3 +155,11 @@ const hide = () => {
   hideElements = document.getElementById('hideMe');
   hideElements.setAttribute('style', 'visibility: hidden');
 };
+
+// 4. Have an input button with id showElems. 
+// When this button is double clicked, 
+// all the elements on the page should be shown.
+const show = () => {
+  showElements = document.getElementById('hideMe');
+  showElements.setAttribute('style', 'visbility: visible');
+}
