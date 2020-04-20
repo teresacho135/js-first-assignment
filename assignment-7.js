@@ -146,4 +146,12 @@ const tempConverter = (value) => {
 
 // 2. Have images, p tags, div tags and various other elements on the page. 
 // When the page loads, an alert saying "welcome to my blog" should pop up.
-alert('Welcome to my blog')
+// alert('Welcome to my blog');
+
+// 3. Have several html tags on the page. 
+// Have an input button with id hideElems. 
+// When this button is clicked all the elements on the page should be hidden.
+const hide = () => {
+  hideElements = document.getElementById('hideMe');
+  hideElements.setAttribute('style', 'visibility: hidden');
+};
