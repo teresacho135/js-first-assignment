@@ -218,3 +218,43 @@ const removeChecks = () => {
 };
 
 //is there a way to do this without individually going through each checkbox and removing their attribute of checked?
+
+// 8. Have called VALIDATE then it should check if the select boxes
+//  are selected or NOT. If yes, then alert the TEXT that were selected
+//   in each of these select boxes.
+
+const validateCheckboxes = () => {
+  checkedBox1 = document.getElementById('checkedBox1');
+  checkedBox2 = document.getElementById('checkedBox2');
+  checkedBox3 = document.getElementById('checkedBox3');
+  checkedBox4 = document.getElementById('checkedBox4');
+  checkedBox5 = document.getElementById('checkedBox5');
+  checkedBox6 = document.getElementById('checkedBox6');
+  checkedBox7 = document.getElementById('checkedBox7');
+  checkedBox8 = document.getElementById('checkedBox8');
+  checkedBox9 = document.getElementById('checkedBox9');
+  checkedBox10 = document.getElementById('checkedBox10');
+  if(!checkedBox1.checked) {
+    document.getElementById('checkedBox1Label').innerHTML = "Alert, this is unchecked."
+  } else if (!checkedBox2.checked) {
+    document.getElementById('checkedBox2Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox3.checked) {
+    document.getElementById('checkedBox3Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox4.checked) {
+    document.getElementById('checkedBox4Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox5.checked) {
+    document.getElementById('checkedBox5Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox6.checked) {
+    document.getElementById('checkedBox6Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox7.checked) {
+    document.getElementById('checkedBox7Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox8.checked) {
+    document.getElementById('checkedBox8Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox9.checked) {
+    document.getElementById('checkedBox9Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox10.checked) {
+    document.getElementById('checkedBox10Label').innerHTML = "Alert, this is unchecked."
+  }
+}
+
+//may need to use switch case. 
