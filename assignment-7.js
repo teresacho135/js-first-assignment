@@ -185,6 +185,10 @@ const hideList = () => {
 
 const hideSheep = () => {
   sheep1 = document.getElementById('main_1');
+  sheep2 = document.getElementById('main_2');
+  sheep3 = document.getElementById('main_3');
   sheep1.setAttribute('style', 'display: none');
+  sheep2.setAttribute('style', 'display: none');
+  sheep3.setAttribute('style', 'display: none');
 };
 
