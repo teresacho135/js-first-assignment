@@ -82,8 +82,6 @@ const handleNext = () => {
 
 //Form Validation
 
-//Form Validation
-
 // Create a form with First Name, Last Name, radio buttons for Gender 
 // (Male and Female), drop down menu for State,
 //  a check box for I ACCEPT and a submit button.
@@ -97,6 +95,11 @@ const handleNext = () => {
 const validateForm = (event) => {
   let firstName = document.forms['info-form']['first-name'].value;
   let lastName = document.forms['info-form']['last-name'].value;
+  let maleCheckbox = document.getElementById('male');
+  let femaleCheckbox = document.getElementById('female');
+  let otherCheckbox = document.getElementById('other');
+  let state = document.getElementById('states');
+  let checkbox = document.getElementById('agree');
   let letters = /^[A-Za-z]+$/;
   if(firstName === '' && lastName === '' ) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
@@ -104,11 +107,154 @@ const validateForm = (event) => {
   } else if(!firstName.match(letters) && !lastName.match(letters)) {
     document.getElementById('first-name-info').style.backgroundColor = 'red';
     document.getElementById('last-name-info').style.backgroundColor = 'red';
-  };
+  } else if(maleCheckbox.checked == false && femaleCheckbox.checked == false && otherCheckbox.checked == false) {
+    alert('Please check one of the boxes')
+  } else if(state.value == '') {
+    alert('Please pick a state.')
+  } else if(!checkbox.checked) {
+    alert('Please check \'I AGREE\' to proceed.')
+  }
   event.preventDefault();
 };
 
 // 2. If the Gender is not selected, alert the user to select at least one option.
-
 //can use required (allowing the browser to do validation.)
 
+// 3. If the State is not selected, alert the user to select a state.
+//refer back to validateFrom() function.
+
+// 4. If the check box is not selected, alert the user to check the box.
+//refer back to validateForm() function.
+
+//DOM and EVENTS:
+// 1. Write a program to convert Fahrenheit temperature to Celsius. 
+// Here are the things that needs to be implemented as a part of this question:
+// a. Ask the input from the user for Fahrenheit using a text field
+// b. As soon as the user types in the Fahrenheit number in the text field, 
+// the result should display immediately in the div below
+// c. Hence, there should not be any submit button
+// d. Hint: Use onkeyup event. Formula is : C = (F - 32) * 5/9
+// e. Don't display the decimal values - but you should accept decimal values from the user
+// f. If the user enters any invalid values (strings) ) 
+// then you should make the input box border red and prompt user to enter correct values
+
+const tempConverter = (value) => {
+  value = parseFloat(value);
+  convertedValue = Math.round((value - 32)/1.8);
+  document.getElementById('outputCelcius').innerHTML = convertedValue + '°' ;
+};
+
+// 2. Have images, p tags, div tags and various other elements on the page. 
+// When the page loads, an alert saying "welcome to my blog" should pop up.
+// alert('Welcome to my blog');
+
+// 3. Have several html tags on the page. 
+// Have an input button with id hideElems. 
+// When this button is clicked all the elements on the page should be hidden.
+const hide = () => {
+  hideElements = document.getElementById('hideMe');
+  hideElements.setAttribute('style', 'visibility: hidden');
+};
+
+// 4. Have an input button with id showElems. 
+// When this button is double clicked, 
+// all the elements on the page should be shown.
+const show = () => {
+  showElements = document.getElementById('hideMe');
+  showElements.setAttribute('style', 'visbility: visible');
+};
+
+// 5. Have an input button with a id and
+// a. when you mouseover this button, 
+// the <ul> elements on the page should be shown.
+// b. when you mouseout this button, 
+// the <ul> elements on the page should be hidden.
+
+const showList = () => {
+  list = document.getElementById('interestingList');
+  list.setAttribute('style', 'display: show');
+};
+
+const hideList = () => {
+  list = document.getElementById('interestingList');
+  list.setAttribute('style', 'display: none');
+};
+
+// 6. When page loads, write code to hide elements all the elements 
+// with ids "main_one", "main_two" and "main_three".
+
+const hideSheep = () => {
+  sheep1 = document.getElementById('main_1');
+  sheep2 = document.getElementById('main_2');
+  sheep3 = document.getElementById('main_3');
+  sheep1.setAttribute('style', 'display: none');
+  sheep2.setAttribute('style', 'display: none');
+  sheep3.setAttribute('style', 'display: none');
+};
+
+// 7. Create 10 check boxes. When you click a button called "Select All"
+//  - all the check boxes should be unchecked.
+const removeChecks = () => {
+  checkedBox1 = document.getElementById('checkedBox1');
+  checkedBox2 = document.getElementById('checkedBox2');
+  checkedBox3 = document.getElementById('checkedBox3');
+  checkedBox4 = document.getElementById('checkedBox4');
+  checkedBox5 = document.getElementById('checkedBox5');
+  checkedBox6 = document.getElementById('checkedBox6');
+  checkedBox7 = document.getElementById('checkedBox7');
+  checkedBox8 = document.getElementById('checkedBox8');
+  checkedBox9 = document.getElementById('checkedBox9');
+  checkedBox10 = document.getElementById('checkedBox10');
+  checkedBox1.removeAttribute('checked');
+  checkedBox2.removeAttribute('checked');
+  checkedBox3.removeAttribute('checked');
+  checkedBox4.removeAttribute('checked');
+  checkedBox5.removeAttribute('checked');
+  checkedBox6.removeAttribute('checked');
+  checkedBox7.removeAttribute('checked');
+  checkedBox8.removeAttribute('checked');
+  checkedBox9.removeAttribute('checked');
+  checkedBox10.removeAttribute('checked');
+};
+
+//is there a way to do this without individually going through each checkbox and removing their attribute of checked?
+
+// 8. Have called VALIDATE then it should check if the select boxes
+//  are selected or NOT. If yes, then alert the TEXT that were selected
+//   in each of these select boxes.
+
+const validateCheckboxes = () => {
+  checkedBox1 = document.getElementById('checkedBox1');
+  checkedBox2 = document.getElementById('checkedBox2');
+  checkedBox3 = document.getElementById('checkedBox3');
+  checkedBox4 = document.getElementById('checkedBox4');
+  checkedBox5 = document.getElementById('checkedBox5');
+  checkedBox6 = document.getElementById('checkedBox6');
+  checkedBox7 = document.getElementById('checkedBox7');
+  checkedBox8 = document.getElementById('checkedBox8');
+  checkedBox9 = document.getElementById('checkedBox9');
+  checkedBox10 = document.getElementById('checkedBox10');
+  if(!checkedBox1.checked) {
+    document.getElementById('checkedBox1Label').innerHTML = "Alert, this is unchecked."
+  } else if (!checkedBox2.checked) {
+    document.getElementById('checkedBox2Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox3.checked) {
+    document.getElementById('checkedBox3Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox4.checked) {
+    document.getElementById('checkedBox4Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox5.checked) {
+    document.getElementById('checkedBox5Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox6.checked) {
+    document.getElementById('checkedBox6Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox7.checked) {
+    document.getElementById('checkedBox7Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox8.checked) {
+    document.getElementById('checkedBox8Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox9.checked) {
+    document.getElementById('checkedBox9Label').innerHTML = "Alert, this is unchecked."
+  } else if(!checkedBox10.checked) {
+    document.getElementById('checkedBox10Label').innerHTML = "Alert, this is unchecked."
+  }
+}
+
+//may need to use switch case. 

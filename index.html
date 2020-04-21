@@ -71,104 +71,165 @@
   ><br>
     <button onClick="handlePrev()">Prev</button>
     <button onClick="handleNext()">Next</button>
-  <h1>JS ASSIGNMENT 8 (FORM VALIDATION)</h1>
-  <form name='info-form' onsubmit="return validateForm(event)">
-    <label for='first-name'>First Name:</label><br>
-    <input 
-      type='text' 
-      id='first-name-info' 
-      name='first-name' 
-      placeholder="Michael"
-      
-    ><br>
-    <label for='last-name'>Last Name:</label><br>
-    <input
-      type='text'
-      id='last-name-info'
-      name='last-name'
-      placeholder="Scott"
-      
-    ><br>
-    <input
-      type='radio'
-      id='male'
-      name='gender'
-      value='male'
-      
-    >
-    <label for='male'>Male</label><br>
-    <input
-      type='radio'
-      id='female'
-      name='gender'
-      value='female'
-      
-    >
-    <label for='female'>Female</label><br>
-    <input
-      type='radio'
-      id='other'
-      name='gender'
-      value='other'
-      
-    >
-    <label for='other'>Other</label><br>
-    <label for='state'>State:</label>
-      <select id='states' name='states'>
-        <option value="AL">Alabama</option>
-        <option value="AK">Alaska</option>
-        <option value="AZ">Arizona</option>
-        <option value="AR">Arkansas</option>
-        <option value="CA" selected>California</option>
-        <option value="CO">Colorado</option>
-        <option value="CT">Connecticut</option>
-        <option value="DE">Delaware</option>
-        <option value="DC">District of Columbia</option>
-        <option value="FL">Florida</option>
-        <option value="GA">Georgia</option>
-        <option value="HI">Hawaii</option>
-        <option value="ID">Idaho</option>
-        <option value="IL">Illinois</option>
-        <option value="IN">Indiana</option>
-        <option value="IA">Iowa</option>
-        <option value="KS">Kansas</option>
-        <option value="KY">Kentucky</option>
-        <option value="LA">Louisiana</option>
-        <option value="ME">Maine</option>
-        <option value="MD">Maryland</option>
-        <option value="MA">Massachusetts</option>
-        <option value="MI">Michigan</option>
-        <option value="MN">Minnesota</option>
-        <option value="MS">Mississippi</option>
-        <option value="MO">Missouri</option>
-        <option value="MT">Montana</option>
-        <option value="NE">Nebraska</option>
-        <option value="NV">Nevada</option>
-        <option value="NH">New Hampshire</option>
-        <option value="NJ">New Jersey</option>
-        <option value="NM">New Mexico</option>
-        <option value="NY">New York</option>
-        <option value="NC">North Carolina</option>
-        <option value="ND">North Dakota</option>
-        <option value="OH">Ohio</option>
-        <option value="OK">Oklahoma</option>
-        <option value="OR">Oregon</option>
-        <option value="PA">Pennsylvania</option>
-        <option value="RI">Rhode Island</option>
-        <option value="SC">South Carolina</option>
-        <option value="SD">South Dakota</option>
-        <option value="TN">Tennessee</option>
-        <option value="TX">Texas</option>
-        <option value="UT">Utah</option>
-        <option value="VT">Vermont</option>
-        <option value="VA">Virginia</option>
-        <option value="WA">Washington</option>
-        <option value="WV">West Virginia</option>
-        <option value="WI">Wisconsin</option>
-        <option value="WY">Wyoming</option>
-      </select><br>
-        <input type="submit" value="Submit">
-  </form>
+<h1>JS ASSIGNMENT 7 CONT. (FORM VALIDATION)</h1>
+    <form name='info-form' onsubmit="return validateForm(event)">
+      <label for='first-name'>First Name:</label><br>
+      <input 
+        type='text' 
+        id='first-name-info' 
+        name='first-name' 
+        placeholder="Michael"
+        
+      ><br>
+      <label for='last-name'>Last Name:</label><br>
+      <input
+        type='text'
+        id='last-name-info'
+        name='last-name'
+        placeholder="Scott"
+        
+      ><br>
+      <input
+        type='radio'
+        id='male'
+        name='gender'
+        value='male'
+        
+      >
+      <label for='male'>Male</label><br>
+      <input
+        type='radio'
+        id='female'
+        name='gender'
+        value='female'
+        
+      >
+      <label for='female'>Female</label><br>
+      <input
+        type='radio'
+        id='other'
+        name='gender'
+        value='other'
+        
+      >
+      <label for='other'>Other</label><br>
+      <label for='state'>State:</label>
+        <select id='states' name='states'>
+          <option value="" disabled selected>Select your State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA" >California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select><br>
+            <input type='checkbox' id='agree' name='checkbox' value='agree'>
+            <label for='agree'>I AGREE</label><br>
+          <input type="submit" value="Submit">
+    </form>
+<h1>JS ASSIGNMENT 7 CONT. (DOM AND EVENTS)</h1>   
+    <h2>🔥 Fahrenheit to Celsius Calculator ❄</h2>
+    <p>
+      <label>Fahrenheit: </label>
+        <input 
+          id="fahrenheit-value"
+          type="number" 
+          placeholder="ex. 98" 
+          oninput="tempConverter(this.value)"
+          onchange="tempConverter(this.value)"
+          >
+    </p>
+    <p>Celcius: <span id="outputCelcius"></span></p>
+        <p id='celsius'></p>
+<h2>Question 3</h2>
+<div id='hideMe'>  
+  <p>Bacon ipsum dolor amet corned beef pancetta shoulder tri-tip ball tip hamburger.</p>
+    <img src="assets/ham.jpg" style="width: 50%;"><br>
+      <button>turducken</button><br>
+    </div>  
+    <input type="button" id='hideElems' onclick='hide()' value="Hide all the Bacon"><br>
+    <input type ="button" id="showElems" ondblclick="show()" value="Bring back the bacon (double click)"><br>
+<h3>Here are some facts that may interest you</h3>
+  <div id="interestingList" style="visibility: hidden;" >      
+    <ul>
+      <li>Canadians say “sorry” so much that a law was passed in 2009 declaring that an apology can’t be used as evidence of admission to guilt.</li>
+      <li>The scientific term for brain freeze is “sphenopalatine ganglioneuralgia”.</li>
+      <li>One habit of intelligent humans is being easily annoyed by people around them, but saying nothing in order to avoid a meaningless argument.</li>
+    </ul>
+  </div>
+<input type="button" id="listOfFacts" onmouseover="showList()" onmouseout="hideList()" value="Hover over here if you want these facts to appear"><br>
+<h3>These elements should be gone</h3>
+  <img src="assets/sheep1.jpg" onload='hideSheep()' id="main_1" style="width: 15%;">
+  <img src="assets/sheep2.jpg" onload='hideSheep()' id="main_2" style="width: 15%">
+  <img src="assets/sheep3.jpg" onload='hideSheep()' id="main_3" style="width: 15%">
+<h3>Here comes the checkboxes</h3>
+  <input type='checkbox' id='checkedBox1' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox1Label">Checkbox 1</label><br>
+  <input type='checkbox' id='checkedBox2' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox2Label">Checkbox 2</label><br>
+  <input type='checkbox' id='checkedBox3' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id='checkedBox3Label'>Checkbox 3</label><br>
+  <input type='checkbox' id='checkedBox4' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox4Label">Checkbox 4</label><br>
+  <input type='checkbox' id='checkedBox5' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox5Label">Checkbox 5</label><br>
+  <input type='checkbox' id='checkedBox6' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox6Label">Checkbox 6</label><br>
+  <input type='checkbox' id='checkedBox7' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox7Label">Checkbox 7<label><br>
+  <input type='checkbox' id='checkedBox8' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox8Label">Checkbox 8</label><br>
+  <input type='checkbox' id='checkedBox9' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox9Label">Checkbox 9</label><br>
+  <input type='checkbox' id='checkedBox10' name='checkbox' checked value='selected'>
+  <label for='selecteMe' id="checkedBox10Label">Checkbox 10</label><br>
+ <input type="button" id="unselect" onclick='removeChecks()' value="Click Here to Deselect all Checkboxes"><br>
+ <input type="button" id="validateCheckbox" onclick="validateCheckboxes()" value="VALIDATE">
 <script src='assignment-1.js'></script>
 <script src='assignment-2.js'></script>
 <script src='assignment-3.js'></script>
