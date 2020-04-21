@@ -179,3 +179,12 @@ const hideList = () => {
   list = document.getElementById('interestingList');
   list.setAttribute('style', 'display: none');
 };
+
+// 6. When page loads, write code to hide elements all the elements 
+// with ids "main_one", "main_two" and "main_three".
+
+const hideSheep = () => {
+  sheep1 = document.getElementById('main_1');
+  sheep1.setAttribute('style', 'display: none');
+};
+
