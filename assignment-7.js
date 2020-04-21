@@ -192,3 +192,29 @@ const hideSheep = () => {
   sheep3.setAttribute('style', 'display: none');
 };
 
+// 7. Create 10 check boxes. When you click a button called "Select All"
+//  - all the check boxes should be unchecked.
+const removeChecks = () => {
+  checkedBox1 = document.getElementById('checkedBox1');
+  checkedBox2 = document.getElementById('checkedBox2');
+  checkedBox3 = document.getElementById('checkedBox3');
+  checkedBox4 = document.getElementById('checkedBox4');
+  checkedBox5 = document.getElementById('checkedBox5');
+  checkedBox6 = document.getElementById('checkedBox6');
+  checkedBox7 = document.getElementById('checkedBox7');
+  checkedBox8 = document.getElementById('checkedBox8');
+  checkedBox9 = document.getElementById('checkedBox9');
+  checkedBox10 = document.getElementById('checkedBox10');
+  checkedBox1.removeAttribute('checked');
+  checkedBox2.removeAttribute('checked');
+  checkedBox3.removeAttribute('checked');
+  checkedBox4.removeAttribute('checked');
+  checkedBox5.removeAttribute('checked');
+  checkedBox6.removeAttribute('checked');
+  checkedBox7.removeAttribute('checked');
+  checkedBox8.removeAttribute('checked');
+  checkedBox9.removeAttribute('checked');
+  checkedBox10.removeAttribute('checked');
+};
+
+//is there a way to do this without individually going through each checkbox and removing their attribute of checked?
